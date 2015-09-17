@@ -33,9 +33,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var blazeIt: UILabel!
     
     @IBAction func blazeFunk(sender: AnyObject) {
-        blazeIt.text = "420"
+        if blazeIt.text == "420"
+        {
+            blazeIt.text = "Guesser"
+        }
+        else
+        {
+            blazeIt.text = "420"
+        }
     }
     
+    @IBAction func Button2(sender: AnyObject) {
+        blazeIt.text = "Vex"
+    }
     
+    @IBAction func DaButton(sender: AnyObject) {
+    }
 }
 
