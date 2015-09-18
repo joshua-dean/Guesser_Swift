@@ -8,8 +8,12 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
+    
+    var counter = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -49,5 +53,14 @@ class ViewController: UIViewController {
     
     @IBAction func DaButton(sender: AnyObject) {
     }
+    
+    @IBOutlet weak var CountingIsFun: UILabel!
+    
+    
+    @IBAction func DaCount(sender: AnyObject) {
+        counter++
+        CountingIsFun.text = "\(counter)"
+    }
+    
 }
 
