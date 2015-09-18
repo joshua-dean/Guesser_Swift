@@ -8,7 +8,17 @@
 
 import Foundation
 
+let defaults = NSUserDefaults.standardUserDefaults()
 func storeDouble(name: String, value: Double)
 {
+    defaults.setValue(String(value), forKey: name);
+    //defaults.setValue
     
+    defaults.synchronize()
+}
+
+func retrieveDouble(name: String) -> Double
+{
+    let potatoe = defaults.valueForKey(name)
+    return potatoe!.doubleValue
 }
