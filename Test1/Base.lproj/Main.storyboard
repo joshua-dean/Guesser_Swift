@@ -56,6 +56,25 @@
                                     <rect key="frame" x="167" y="108" width="113" height="58"/>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PmU-35-c6v">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="167" y="295" width="42" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ZM-SY-ycG">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="163" y="334" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="DaCount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z6c-AT-jlf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -64,6 +83,8 @@
                                 <exclude reference="mRi-6q-jaL"/>
                                 <exclude reference="B8w-f1-f47"/>
                                 <exclude reference="2ap-Lc-GfP"/>
+                                <exclude reference="PmU-35-c6v"/>
+                                <exclude reference="9ZM-SY-ycG"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -72,10 +93,13 @@
                                 <include reference="mRi-6q-jaL"/>
                                 <include reference="B8w-f1-f47"/>
                                 <include reference="2ap-Lc-GfP"/>
+                                <include reference="PmU-35-c6v"/>
+                                <include reference="9ZM-SY-ycG"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="CountingIsFun" destination="PmU-35-c6v" id="C2b-Sz-pmL"/>
                         <outlet property="blazeIt" destination="2ap-Lc-GfP" id="18e-2a-KcK"/>
                     </connections>
                 </viewController>
