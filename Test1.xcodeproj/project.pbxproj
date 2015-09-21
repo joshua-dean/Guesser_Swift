@@ -16,8 +16,8 @@
 		3390ACE11BA9C33E00A0A5A3 /* Test1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3390ACE01BA9C33E00A0A5A3 /* Test1Tests.swift */; };
 		3390ACEC1BA9C33E00A0A5A3 /* Test1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3390ACEB1BA9C33E00A0A5A3 /* Test1UITests.swift */; };
 		33E11D0D1BAB14B90000C3FE /* GameUI.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33E11D0C1BAB14B90000C3FE /* GameUI.xib */; };
-		5B5A7C4E1BAC675A005BCA8F /* ShaqsNKobes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5A7C4D1BAC675A005BCA8F /* ShaqsNKobes.swift */; };
 		5B6BFDAA1BAB1A820013811D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6BFDA91BAB1A820013811D /* SecondViewController.swift */; };
+		6072CD101BACB74900DF940E /* ShaqsNKobes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5A7C4D1BAC675A005BCA8F /* ShaqsNKobes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -268,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6072CD101BACB74900DF940E /* ShaqsNKobes.swift in Sources */,
 				5B6BFDAA1BAB1A820013811D /* SecondViewController.swift in Sources */,
 				3390ACCE1BA9C33E00A0A5A3 /* ViewController.swift in Sources */,
 				331C79621BAC65F4005CEF7A /* DataProcessing.swift in Sources */,

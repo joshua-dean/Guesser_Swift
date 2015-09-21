@@ -27,3 +27,26 @@ func generateNumber(level: UInt32) -> Int
     number++
     return number
 }
+
+func calculateGuess(realnumber: Int, guessnumber: Int) -> String
+{
+    var adjust = "Correct!"
+    if guessnumber > realnumber
+    {
+        adjust = "Lower"
+    }
+    if guessnumber < realnumber
+    {
+        adjust = "Higher"
+    }
+    return adjust
+}
+
+
+
+
+
+
+
+
+

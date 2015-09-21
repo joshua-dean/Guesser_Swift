@@ -17,8 +17,13 @@ func storeDouble(name: String, value: Double)
     defaults.synchronize()
 }
 
-func retrieveDouble(name: String) -> Double
+func retrieveDouble(name: String) -> Double?
 {
-    let potatoe = defaults.valueForKey(name)
-    return potatoe!.doubleValue
+    if let potatoe = defaults.valueForKey(name)
+    {
+        return potatoe.doubleValue
+    }
+
+        return -42.0
+    
 }

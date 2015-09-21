@@ -12,13 +12,28 @@ class SecondViewController: UIViewController {
     
     var numberguessed = 0
     var numberlength = 0
+    var guesses = 0;
     var numberlabel = ""
+    var adjustlabel = ""
+    var secretnumber = 0
+    var retarded: Double? = -42
+    var userlevel = 0;
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        var level: Double? = retrieveDouble("Level")
+        if retrieveDouble("Level") == retarded
+        {
+            level = 1
+            storeDouble("Level", value: 1)
+        }
+        userlevel = Int(level!)
+        secretnumber = generateNumber(UInt32(userlevel))
+        GuessTell.text = "Guess 1-\(userlevel)"
+        TheNumber.text = ""
+        SideLabel.text = ""
     }
     
     override func didReceiveMemoryWarning() {
@@ -26,6 +41,15 @@ class SecondViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBOutlet weak var TheNumber: UILabel!
+    @IBOutlet weak var SideLabel: UILabel!
+    @IBOutlet weak var GuessTell: UILabel!
+    
+    @IBAction func ShopButton(sender: AnyObject) {
+        storeDouble("Level", value: 1)
+        userlevel = 1
+        GuessTell.text = "Guess 1-\(userlevel)"
+        secretnumber = generateNumber(UInt32(userlevel))
+    }
     
     @IBAction func Add0(sender: AnyObject) {
         numberlabel = numberlabel + "0"
@@ -85,5 +109,29 @@ class SecondViewController: UIViewController {
             TheNumber.text = numberlabel
         }
     }
+    
+    
+    @IBAction func EnterDaNumber(sender: AnyObject) {
+        numberguessed = Int(numberlabel)!
+        guesses++
+        adjustlabel = calculateGuess(secretnumber, guessnumber: numberguessed)
+        SideLabel.text = adjustlabel
+        TheNumber.text = ""
+        numberlabel = ""
+        if adjustlabel == "Correct!"
+        {
+            if guesses == 1
+            {
+                userlevel++
+                storeDouble("Level", value: Double(userlevel))
+            }
+            secretnumber = generateNumber(UInt32(userlevel))
+            guesses = 0
+            GuessTell.text = "Guess 1-\(userlevel)"
+        }
+        
+    }
+    
+    
 
 }
