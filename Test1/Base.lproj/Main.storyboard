@@ -227,6 +227,7 @@
                                 </variation>
                                 <connections>
                                     <action selector="ShopButton:" destination="mQ1-me-P1g" eventType="touchUpInside" id="CWm-P5-1El"/>
+                                    <segue destination="I0f-5M-Y2u" kind="show" id="4JZ-Z3-Cak"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jX9-1k-pua">
@@ -302,7 +303,49 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dRC-gH-sNn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="214.5" y="1078"/>
+            <point key="canvasLocation" x="250.5" y="1122"/>
+        </scene>
+        <!--Shop View Controller-->
+        <scene sceneID="4vt-1W-gFk">
+            <objects>
+                <viewController id="I0f-5M-Y2u" customClass="ShopViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="63D-QG-P1d"/>
+                        <viewControllerLayoutGuide type="bottom" id="t9s-4k-FGZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Udr-ee-TBN">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vX5-tb-HhV">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="72" y="378" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="mQ1-me-P1g" kind="show" id="i9h-TV-uZf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="vX5-tb-HhV"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="vX5-tb-HhV"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="82U-ev-gCs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1104" y="1193"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="i9h-TV-uZf"/>
+    </inferredMetricsTieBreakers>
 </document>
