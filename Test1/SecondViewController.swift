@@ -112,22 +112,25 @@ class SecondViewController: UIViewController {
     
     
     @IBAction func EnterDaNumber(sender: AnyObject) {
-        numberguessed = Int(numberlabel)!
-        guesses++
-        adjustlabel = calculateGuess(secretnumber, guessnumber: numberguessed)
-        SideLabel.text = adjustlabel
-        TheNumber.text = ""
-        numberlabel = ""
-        if adjustlabel == "Correct!"
+        if numberlabel != ""
         {
-            if guesses == 1
+            numberguessed = Int(numberlabel)!
+            guesses++
+            adjustlabel = calculateGuess(secretnumber, guessnumber: numberguessed)
+            SideLabel.text = adjustlabel
+            TheNumber.text = ""
+            numberlabel = ""
+            if adjustlabel == "Correct!"
             {
-                userlevel++
-                storeDouble("Level", value: Double(userlevel))
+                if guesses == 1
+                {
+                    userlevel++
+                    storeDouble("Level", value: Double(userlevel))
+                }
+                secretnumber = generateNumber(UInt32(userlevel))
+                guesses = 0
+                GuessTell.text = "Guess 1-\(userlevel)"
             }
-            secretnumber = generateNumber(UInt32(userlevel))
-            guesses = 0
-            GuessTell.text = "Guess 1-\(userlevel)"
         }
         
     }
