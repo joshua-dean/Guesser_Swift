@@ -17,7 +17,7 @@ class SecondViewController: UIViewController {
     var adjustlabel = ""
     var secretnumber = 0
     var retarded: Double? = -42
-    var userlevel = 0;
+    var userlevel = 0
     
     
     override func viewDidLoad() {

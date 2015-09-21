@@ -93,7 +93,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Enter"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="66" y="484" width="253" height="44"/>
+                                    <rect key="frame" x="286" y="446" width="93" height="44"/>
                                 </variation>
                                 <connections>
                                     <action selector="EnterDaNumber:" destination="mQ1-me-P1g" eventType="touchUpInside" id="mJw-NN-lc4"/>
@@ -104,7 +104,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="0"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="49" y="408" width="30" height="30"/>
+                                    <rect key="frame" x="164" y="489" width="30" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="Add0:" destination="mQ1-me-P1g" eventType="touchUpInside" id="0Um-4Q-hW6"/>
@@ -115,21 +115,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="1"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="94" y="408" width="46" height="30"/>
+                                    <rect key="frame" x="96" y="356" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="Add1:" destination="mQ1-me-P1g" eventType="touchUpInside" id="JMz-6B-oxh"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibf-5h-ZOG">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="Delete"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="322" y="424" width="58" height="45"/>
-                                </variation>
-                                <connections>
-                                    <action selector="DeleteNumber:" destination="mQ1-me-P1g" eventType="touchUpInside" id="Q9I-Ah-ANF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGc-nq-GFv">
@@ -137,7 +126,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="2"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="148" y="408" width="46" height="30"/>
+                                    <rect key="frame" x="156" y="356" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="Add2:" destination="mQ1-me-P1g" eventType="touchUpInside" id="2JP-UO-mc3"/>
@@ -148,7 +137,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="3"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="202" y="408" width="46" height="30"/>
+                                    <rect key="frame" x="216" y="356" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="Add3:" destination="mQ1-me-P1g" eventType="touchUpInside" id="pIl-eR-LdI"/>
@@ -159,7 +148,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="4"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="256" y="408" width="46" height="30"/>
+                                    <rect key="frame" x="96" y="399" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="Add4:" destination="mQ1-me-P1g" eventType="touchUpInside" id="C6r-Oo-HFf"/>
@@ -170,7 +159,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="5"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="41" y="446" width="46" height="30"/>
+                                    <rect key="frame" x="156" y="399" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="Add5:" destination="mQ1-me-P1g" eventType="touchUpInside" id="jZm-Qg-OhS"/>
@@ -181,7 +170,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="6"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="94" y="446" width="46" height="30"/>
+                                    <rect key="frame" x="216" y="400" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="Add6:" destination="mQ1-me-P1g" eventType="touchUpInside" id="EUc-85-10E"/>
@@ -192,7 +181,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="7"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="148" y="446" width="46" height="30"/>
+                                    <rect key="frame" x="96" y="446" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="Add7:" destination="mQ1-me-P1g" eventType="touchUpInside" id="O0j-FO-p6U"/>
@@ -203,7 +192,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="8"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="202" y="446" width="46" height="30"/>
+                                    <rect key="frame" x="156" y="446" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="Add8:" destination="mQ1-me-P1g" eventType="touchUpInside" id="Un3-uG-HLA"/>
@@ -214,7 +203,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="9"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="256" y="446" width="46" height="30"/>
+                                    <rect key="frame" x="216" y="446" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="Add9:" destination="mQ1-me-P1g" eventType="touchUpInside" id="G7W-9f-dqh"/>
@@ -226,7 +215,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="123" y="532" width="155" height="48"/>
+                                    <rect key="frame" x="115" y="527" width="155" height="48"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S8O-af-3G6">
@@ -246,9 +235,20 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="49" y="371" width="270" height="29"/>
+                                    <rect key="frame" x="49" y="311" width="270" height="29"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibf-5h-ZOG">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Delete"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="286" y="356" width="92" height="45"/>
+                                </variation>
+                                <connections>
+                                    <action selector="DeleteNumber:" destination="mQ1-me-P1g" eventType="touchUpInside" id="Q9I-Ah-ANF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -258,7 +258,6 @@
                                 <exclude reference="yxL-ga-BQO"/>
                                 <exclude reference="6l2-f8-d6v"/>
                                 <exclude reference="c6z-nm-ZCJ"/>
-                                <exclude reference="Ibf-5h-ZOG"/>
                                 <exclude reference="sGc-nq-GFv"/>
                                 <exclude reference="mLt-Hx-lfu"/>
                                 <exclude reference="kCx-Jf-6TD"/>
@@ -270,6 +269,7 @@
                                 <exclude reference="EuS-V1-VGi"/>
                                 <exclude reference="S8O-af-3G6"/>
                                 <exclude reference="jX9-1k-pua"/>
+                                <exclude reference="Ibf-5h-ZOG"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -279,7 +279,6 @@
                                 <include reference="yxL-ga-BQO"/>
                                 <include reference="6l2-f8-d6v"/>
                                 <include reference="c6z-nm-ZCJ"/>
-                                <include reference="Ibf-5h-ZOG"/>
                                 <include reference="sGc-nq-GFv"/>
                                 <include reference="mLt-Hx-lfu"/>
                                 <include reference="kCx-Jf-6TD"/>
@@ -291,6 +290,7 @@
                                 <include reference="EuS-V1-VGi"/>
                                 <include reference="S8O-af-3G6"/>
                                 <include reference="jX9-1k-pua"/>
+                                <include reference="Ibf-5h-ZOG"/>
                             </mask>
                         </variation>
                     </view>
