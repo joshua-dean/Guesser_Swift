@@ -111,6 +111,20 @@
                                     <action selector="Add4:" destination="z3Q-h8-ocj" eventType="touchUpInside" id="V6n-jr-u0E"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVr-yH-Pva">
+                                <rect key="frame" x="167" y="386" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="5"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="56" y="224" width="46" height="30"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="47" y="174" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="Add5:" destination="z3Q-h8-ocj" eventType="touchUpInside" id="a0N-QQ-dmK"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dr-2M-S1V">
                                 <rect key="frame" x="234" y="385" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -185,7 +199,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="155" y="136" width="49" height="29"/>
+                                    <rect key="frame" x="-1" y="143" width="49" height="29"/>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="146" y="86" width="49" height="29"/>
@@ -409,20 +423,29 @@
                                     <action selector="ShopButton:" destination="z3Q-h8-ocj" eventType="touchUpInside" id="hwr-al-epp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVr-yH-Pva">
-                                <rect key="frame" x="167" y="386" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="5"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1UK-Ps-UGu">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MyX-Aq-37r">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="WDj-Gp-hrm">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="56" y="224" width="46" height="30"/>
+                                    <rect key="frame" x="110" y="122" width="150" height="50"/>
                                 </variation>
-                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="47" y="174" width="46" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="Add5:" destination="z3Q-h8-ocj" eventType="touchUpInside" id="a0N-QQ-dmK"/>
-                                </connections>
-                            </button>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -434,6 +457,7 @@
                                 <exclude reference="jWu-BD-3CZ"/>
                                 <exclude reference="wXN-A0-lJC"/>
                                 <exclude reference="7MA-Cz-v7P"/>
+                                <exclude reference="YVr-yH-Pva"/>
                                 <exclude reference="9dr-2M-S1V"/>
                                 <exclude reference="nZp-F6-hpG"/>
                                 <exclude reference="Pjh-9C-0en"/>
@@ -460,7 +484,7 @@
                                 <exclude reference="vhg-OG-Zjy"/>
                                 <exclude reference="JzM-hb-iYv"/>
                                 <exclude reference="U3J-Qt-YNG"/>
-                                <exclude reference="YVr-yH-Pva"/>
+                                <exclude reference="1UK-Ps-UGu"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -472,6 +496,7 @@
                                 <include reference="jWu-BD-3CZ"/>
                                 <include reference="wXN-A0-lJC"/>
                                 <include reference="7MA-Cz-v7P"/>
+                                <include reference="YVr-yH-Pva"/>
                                 <include reference="9dr-2M-S1V"/>
                                 <include reference="nZp-F6-hpG"/>
                                 <include reference="Pjh-9C-0en"/>
@@ -481,7 +506,7 @@
                                 <include reference="nT8-dx-0X2"/>
                                 <include reference="XPH-E8-8jY"/>
                                 <include reference="U3J-Qt-YNG"/>
-                                <include reference="YVr-yH-Pva"/>
+                                <include reference="1UK-Ps-UGu"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
@@ -510,6 +535,7 @@
                         <outlet property="GuessTell" destination="F8c-0P-BmE" id="QyV-1K-aYo"/>
                         <outlet property="SideLabel" destination="uWf-Ig-AKc" id="LeL-4y-ea7"/>
                         <outlet property="TheNumber" destination="XPH-E8-8jY" id="SNd-zk-L1n"/>
+                        <outlet property="sLay" destination="1UK-Ps-UGu" id="15a-R9-mFj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qkt-2e-cNg" userLabel="First Responder" sceneMemberID="firstResponder"/>

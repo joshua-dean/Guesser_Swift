@@ -35,11 +35,11 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
         //TheNumber.text = ""
         SideLabel.text = ""
         
-        
-        if(userlevel > scaleVal)
-        {scale = (scaleVal / userlevel)}
-        else
-        {scale = 1}
+        scale = (scaleVal / userlevel)
+        //if(userlevel > scaleVal)
+        //{}
+        //else
+        //{scale = 1}
         
         configureCollectionView()
     }
@@ -148,8 +148,8 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
     let sHeight = UIScreen.mainScreen().bounds.size.height
     let scaleVal = 50.0 //dont change
     var scale: Double = 0.0 //dont change
-    var bot = 4.0
-    var top = 8.0
+    var bot = 1.0
+    var top = 3.0
     /*
     sLay.reloadData()
     configureCollectionView()

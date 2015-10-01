@@ -195,6 +195,29 @@
                                     <rect key="frame" x="0.0" y="162" width="375" height="142"/>
                                 </variation>
                             </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Lht-fq-fpY">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mZU-qI-2Ts">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="S8h-np-Cko">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="100" y="275" width="200" height="66"/>
+                                </variation>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -215,6 +238,7 @@
                                 <exclude reference="3Kd-ZX-kd0"/>
                                 <exclude reference="Ybb-yq-bdv"/>
                                 <exclude reference="Qh0-fX-Cje"/>
+                                <exclude reference="Lht-fq-fpY"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -235,6 +259,7 @@
                                 <include reference="3Kd-ZX-kd0"/>
                                 <include reference="Ybb-yq-bdv"/>
                                 <include reference="Qh0-fX-Cje"/>
+                                <include reference="Lht-fq-fpY"/>
                             </mask>
                         </variation>
                     </view>
@@ -242,6 +267,7 @@
                         <outlet property="GuessTell" destination="Ybb-yq-bdv" id="yDf-HD-Xgn"/>
                         <outlet property="SideLabel" destination="XLZ-qL-zSq" id="XaI-PM-5Nm"/>
                         <outlet property="TheNumber" destination="Bef-Uk-TrS" id="L0T-R3-QAW"/>
+                        <outlet property="sLay" destination="Lht-fq-fpY" id="lZc-OT-JLu"/>
                     </connections>
                 </viewController>
             </objects>
