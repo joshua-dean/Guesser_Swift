@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SecondViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     var numberguessed = 0
     var numberlength = 0
@@ -17,7 +17,7 @@ class SecondViewController: UIViewController {
     var adjustlabel = ""
     var secretnumber = 0
     var retarded: Double? = -42
-    var userlevel = 0
+    var userlevel = 0.0
     
     
     override func viewDidLoad() {
@@ -29,11 +29,19 @@ class SecondViewController: UIViewController {
             level = 1
             storeDouble("Level", value: 1)
         }
-        userlevel = Int(level!)
+        userlevel = Double(level!)
         secretnumber = generateNumber(UInt32(userlevel))
         GuessTell.text = "Guess 1-\(userlevel)"
         //TheNumber.text = ""
         SideLabel.text = ""
+        
+        
+        if(userlevel > scaleVal)
+        {scale = (scaleVal / userlevel)}
+        else
+        {scale = 1}
+        
+        configureCollectionView()
     }
     
     override func didReceiveMemoryWarning() {
@@ -133,6 +141,51 @@ class SecondViewController: UIViewController {
             }
         }
         
+    }
+    
+    let cellID = "CellIdentifier"
+    let sWidth  = UIScreen.mainScreen().bounds.size.width
+    let sHeight = UIScreen.mainScreen().bounds.size.height
+    let scaleVal = 50.0 //dont change
+    var scale: Double = 0.0 //dont change
+    var bot = 4.0
+    var top = 8.0
+    /*
+    sLay.reloadData()
+    configureCollectionView()
+    */
+    
+    @IBOutlet weak var sLay: UICollectionView!
+    
+    func configureCollectionView() {
+        
+        let cellWidth = sLay.bounds.width / CGFloat(userlevel * scale)
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.itemSize = CGSize(width: cellWidth, height: sLay.bounds.height)
+        layout.minimumInteritemSpacing = 0
+        
+        sLay.collectionViewLayout = layout
+        sLay.dataSource = self
+        sLay.delegate = self
+        sLay.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: cellID)
+        sLay.backgroundColor = UIColor.whiteColor()
+        self.view.addSubview(sLay)
+    }
+    
+    /*Scales the view via number of cells*/
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {return Int(userlevel * scale)}
+    
+    /* Decides colors of cells
+    * Called by .reloadData()
+    */
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let val = indexPath.row
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(cellID, forIndexPath: indexPath) as UICollectionViewCell
+        if(val >= Int(bot * scale) && val <= Int(top * scale))
+        {cell.backgroundColor = UIColor.blueColor()}
+        else
+        {cell.backgroundColor = UIColor.purpleColor()}
+        return cell
     }
     
     
