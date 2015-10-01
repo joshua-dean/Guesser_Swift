@@ -32,7 +32,7 @@ class SecondViewController: UIViewController {
         userlevel = Int(level!)
         secretnumber = generateNumber(UInt32(userlevel))
         GuessTell.text = "Guess 1-\(userlevel)"
-        TheNumber.text = ""
+        //TheNumber.text = ""
         SideLabel.text = ""
     }
     

@@ -18,6 +18,9 @@
 		3390ACEC1BA9C33E00A0A5A3 /* Test1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3390ACEB1BA9C33E00A0A5A3 /* Test1UITests.swift */; };
 		33E11D0D1BAB14B90000C3FE /* GameUI.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33E11D0C1BAB14B90000C3FE /* GameUI.xib */; };
 		5B6BFDAA1BAB1A820013811D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6BFDA91BAB1A820013811D /* SecondViewController.swift */; };
+		5BDA5D781BB9CB21007193D1 /* IPhone4s.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BDA5D771BB9CB21007193D1 /* IPhone4s.storyboard */; };
+		5BEB2D161BBD873900757E5F /* IPhone5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BEB2D151BBD873900757E5F /* IPhone5.storyboard */; };
+		5BEB2D181BBD890800757E5F /* IPhone6.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BEB2D171BBD890800757E5F /* IPhone6.storyboard */; };
 		6072CD101BACB74900DF940E /* ShaqsNKobes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5A7C4D1BAC675A005BCA8F /* ShaqsNKobes.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +60,9 @@
 		33E11D0C1BAB14B90000C3FE /* GameUI.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameUI.xib; sourceTree = "<group>"; };
 		5B5A7C4D1BAC675A005BCA8F /* ShaqsNKobes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShaqsNKobes.swift; sourceTree = "<group>"; };
 		5B6BFDA91BAB1A820013811D /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		5BDA5D771BB9CB21007193D1 /* IPhone4s.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = IPhone4s.storyboard; sourceTree = "<group>"; };
+		5BEB2D151BBD873900757E5F /* IPhone5.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = IPhone5.storyboard; sourceTree = "<group>"; };
+		5BEB2D171BBD890800757E5F /* IPhone6.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = IPhone6.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +117,8 @@
 				3390ACCD1BA9C33E00A0A5A3 /* ViewController.swift */,
 				5B6BFDA91BAB1A820013811D /* SecondViewController.swift */,
 				3390ACCF1BA9C33E00A0A5A3 /* Main.storyboard */,
+				5BDA5D771BB9CB21007193D1 /* IPhone4s.storyboard */,
+				5BEB2D171BBD890800757E5F /* IPhone6.storyboard */,
 				5B5A7C4D1BAC675A005BCA8F /* ShaqsNKobes.swift */,
 				3390ACD21BA9C33E00A0A5A3 /* Assets.xcassets */,
 				3390ACD41BA9C33E00A0A5A3 /* LaunchScreen.storyboard */,
@@ -118,6 +126,7 @@
 				33E11D0C1BAB14B90000C3FE /* GameUI.xib */,
 				331C79611BAC65F4005CEF7A /* DataProcessing.swift */,
 				334853F51BB05EE90092A086 /* ShopViewController.swift */,
+				5BEB2D151BBD873900757E5F /* IPhone5.storyboard */,
 			);
 			path = Test1;
 			sourceTree = "<group>";
@@ -246,7 +255,10 @@
 				3390ACD61BA9C33E00A0A5A3 /* LaunchScreen.storyboard in Resources */,
 				3390ACD31BA9C33E00A0A5A3 /* Assets.xcassets in Resources */,
 				3390ACD11BA9C33E00A0A5A3 /* Main.storyboard in Resources */,
+				5BDA5D781BB9CB21007193D1 /* IPhone4s.storyboard in Resources */,
 				33E11D0D1BAB14B90000C3FE /* GameUI.xib in Resources */,
+				5BEB2D161BBD873900757E5F /* IPhone5.storyboard in Resources */,
+				5BEB2D181BBD890800757E5F /* IPhone6.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

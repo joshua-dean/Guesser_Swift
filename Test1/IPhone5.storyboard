@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9046" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+    </dependencies>
+    <scenes>
+        <!--Second View Controller-->
+        <scene sceneID="D9U-ko-Z3B">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LIn-ON-rOy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="SecondViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WZt-aV-po5" customClass="SecondViewController" customModule="Test1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SOw-jS-fIk"/>
+                        <viewControllerLayoutGuide type="bottom" id="88B-7R-neW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GdG-4f-bWX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UeD-kT-Mv8">
+                                <rect key="frame" x="0.0" y="530" width="138" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Back"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="13" y="509" width="102" height="91"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ug4-1x-PHb">
+                                <rect key="frame" x="481" y="354" width="75" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Enter"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="284" y="444" width="62" height="46"/>
+                                </variation>
+                                <connections>
+                                    <action selector="EnterDaNumber:" destination="WZt-aV-po5" eventType="touchUpInside" id="i9j-Z3-LtC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoA-WL-mhJ">
+                                <rect key="frame" x="180" y="482" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="0"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="77" y="490" width="30" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="Add0:" destination="WZt-aV-po5" eventType="touchUpInside" id="dz2-7P-6CH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ggs-Qh-PJG">
+                                <rect key="frame" x="92" y="337" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="1"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="13" y="356" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="Add1:" destination="WZt-aV-po5" eventType="touchUpInside" id="Sl1-HR-5N2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFm-Lm-qDV">
+                                <rect key="frame" x="167" y="340" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="2"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="69" y="356" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="Add2:" destination="WZt-aV-po5" eventType="touchUpInside" id="tH0-H3-2wB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ydq-3m-7Vq">
+                                <rect key="frame" x="239" y="343" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="3"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="123" y="356" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="Add3:" destination="WZt-aV-po5" eventType="touchUpInside" id="53d-sf-xtr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBr-kc-2Le">
+                                <rect key="frame" x="90" y="381" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="4"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="13" y="400" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="Add4:" destination="WZt-aV-po5" eventType="touchUpInside" id="DLK-ZG-Ku9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPF-5u-lGo">
+                                <rect key="frame" x="167" y="386" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="5"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="69" y="400" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="Add5:" destination="WZt-aV-po5" eventType="touchUpInside" id="FZ4-tW-sp1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8B1-bu-O2i">
+                                <rect key="frame" x="234" y="385" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="6"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="123" y="400" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="Add6:" destination="WZt-aV-po5" eventType="touchUpInside" id="XrM-6o-EPl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zI-yI-KM5">
+                                <rect key="frame" x="88" y="428" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="7"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="13" y="452" width="46" height="28"/>
+                                </variation>
+                                <connections>
+                                    <action selector="Add7:" destination="WZt-aV-po5" eventType="touchUpInside" id="gN5-oa-Hs8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaB-Df-gki">
+                                <rect key="frame" x="164" y="432" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="8"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="69" y="452" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="Add8:" destination="WZt-aV-po5" eventType="touchUpInside" id="vQt-f4-LkO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0D-BZ-cNW">
+                                <rect key="frame" x="230" y="431" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="9"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="123" y="450" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="Add9:" destination="WZt-aV-po5" eventType="touchUpInside" id="50d-JB-Wvm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLZ-qL-zSq">
+                                <rect key="frame" x="154" y="527" width="285" height="73"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="115" y="527" width="155" height="48"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Kd-ZX-kd0">
+                                <rect key="frame" x="481" y="517" width="119" height="83"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Shop"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="286" y="522" width="94" height="58"/>
+                                </variation>
+                                <connections>
+                                    <action selector="ShopButton:" destination="WZt-aV-po5" eventType="touchUpInside" id="Yew-oe-2dC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ybb-yq-bdv">
+                                <rect key="frame" x="90" y="289" width="228" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="312" width="49" height="29"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qh0-fX-Cje">
+                                <rect key="frame" x="482" y="422" width="81" height="74"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Delete"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="275" y="356" width="80" height="44"/>
+                                </variation>
+                                <connections>
+                                    <action selector="DeleteNumber:" destination="WZt-aV-po5" eventType="touchUpInside" id="alR-pb-ooQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="IPhone 5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bef-Uk-TrS">
+                                <rect key="frame" x="106" y="108" width="162" height="154"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="162" width="375" height="142"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="UeD-kT-Mv8"/>
+                                <exclude reference="Ug4-1x-PHb"/>
+                                <exclude reference="uoA-WL-mhJ"/>
+                                <exclude reference="Ggs-Qh-PJG"/>
+                                <exclude reference="cFm-Lm-qDV"/>
+                                <exclude reference="Ydq-3m-7Vq"/>
+                                <exclude reference="VBr-kc-2Le"/>
+                                <exclude reference="wPF-5u-lGo"/>
+                                <exclude reference="8B1-bu-O2i"/>
+                                <exclude reference="6zI-yI-KM5"/>
+                                <exclude reference="vaB-Df-gki"/>
+                                <exclude reference="X0D-BZ-cNW"/>
+                                <exclude reference="XLZ-qL-zSq"/>
+                                <exclude reference="3Kd-ZX-kd0"/>
+                                <exclude reference="Ybb-yq-bdv"/>
+                                <exclude reference="Qh0-fX-Cje"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="UeD-kT-Mv8"/>
+                                <include reference="Ug4-1x-PHb"/>
+                                <include reference="uoA-WL-mhJ"/>
+                                <include reference="Ggs-Qh-PJG"/>
+                                <include reference="cFm-Lm-qDV"/>
+                                <include reference="Ydq-3m-7Vq"/>
+                                <include reference="VBr-kc-2Le"/>
+                                <include reference="wPF-5u-lGo"/>
+                                <include reference="8B1-bu-O2i"/>
+                                <include reference="6zI-yI-KM5"/>
+                                <include reference="vaB-Df-gki"/>
+                                <include reference="X0D-BZ-cNW"/>
+                                <include reference="XLZ-qL-zSq"/>
+                                <include reference="3Kd-ZX-kd0"/>
+                                <include reference="Ybb-yq-bdv"/>
+                                <include reference="Qh0-fX-Cje"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="GuessTell" destination="Ybb-yq-bdv" id="yDf-HD-Xgn"/>
+                        <outlet property="SideLabel" destination="XLZ-qL-zSq" id="XaI-PM-5Nm"/>
+                        <outlet property="TheNumber" destination="Bef-Uk-TrS" id="L0T-R3-QAW"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="204" y="312"/>
+        </scene>
+    </scenes>
+</document>
