@@ -21,32 +21,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <state key="normal" title="Back"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="6" y="359" width="102" height="91"/>
+                                    <rect key="frame" x="0.0" y="381" width="102" height="91"/>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="25" y="281" width="102" height="91"/>
                                 </variation>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFr-5G-4Of">
-                                <rect key="frame" x="481" y="354" width="75" height="47"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Enter"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="315" y="276" width="62" height="46"/>
-                                </variation>
-                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="306" y="226" width="62" height="46"/>
-                                </variation>
-                                <connections>
-                                    <action selector="EnterDaNumber:" destination="z3Q-h8-ocj" eventType="touchUpInside" id="3mb-Dm-4p7"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTz-Ez-iN9">
                                 <rect key="frame" x="180" y="482" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="0"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="174" y="324" width="30" height="30"/>
+                                    <rect key="frame" x="100" y="365" width="30" height="30"/>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="165" y="274" width="30" height="30"/>
@@ -60,7 +46,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="1"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="180" width="46" height="30"/>
+                                    <rect key="frame" x="15" y="205" width="46" height="30"/>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="-9" y="130" width="46" height="30"/>
@@ -74,7 +60,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="2"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="56" y="180" width="46" height="30"/>
+                                    <rect key="frame" x="92" y="205" width="46" height="30"/>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="47" y="130" width="46" height="30"/>
@@ -88,7 +74,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="3"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="231" y="189" width="46" height="30"/>
+                                    <rect key="frame" x="164" y="205" width="46" height="30"/>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="222" y="139" width="46" height="30"/>
@@ -102,7 +88,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="4"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="224" width="46" height="30"/>
+                                    <rect key="frame" x="15" y="253" width="46" height="30"/>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="-9" y="174" width="46" height="30"/>
@@ -116,7 +102,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="5"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="56" y="224" width="46" height="30"/>
+                                    <rect key="frame" x="92" y="253" width="46" height="30"/>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="47" y="174" width="46" height="30"/>
@@ -130,7 +116,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="6"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="231" y="235" width="46" height="30"/>
+                                    <rect key="frame" x="164" y="253" width="46" height="30"/>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="222" y="185" width="46" height="30"/>
@@ -144,7 +130,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="7"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="276" width="46" height="28"/>
+                                    <rect key="frame" x="15" y="307" width="46" height="28"/>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="-9" y="226" width="46" height="28"/>
@@ -158,7 +144,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="8"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="56" y="276" width="46" height="30"/>
+                                    <rect key="frame" x="92" y="306" width="46" height="30"/>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="47" y="226" width="46" height="30"/>
@@ -172,7 +158,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="9"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="110" y="274" width="46" height="30"/>
+                                    <rect key="frame" x="164" y="306" width="46" height="30"/>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="101" y="224" width="46" height="30"/>
@@ -187,13 +173,13 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="132" y="383" width="155" height="48"/>
+                                    <rect key="frame" x="101" y="403" width="83" height="48"/>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="123" y="333" width="155" height="48"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8c-0P-BmE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8c-0P-BmE">
                                 <rect key="frame" x="90" y="289" width="228" height="31"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -205,27 +191,13 @@
                                     <rect key="frame" x="146" y="86" width="49" height="29"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nT8-dx-0X2">
-                                <rect key="frame" x="482" y="422" width="81" height="74"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Delete"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="306" y="195" width="80" height="44"/>
-                                </variation>
-                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="297" y="145" width="80" height="44"/>
-                                </variation>
-                                <connections>
-                                    <action selector="DeleteNumber:" destination="z3Q-h8-ocj" eventType="touchUpInside" id="Sy2-zj-sDk"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4s" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPH-E8-8jY">
                                 <rect key="frame" x="106" y="108" width="162" height="154"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="44"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="67" y="64" width="245" height="35"/>
+                                    <rect key="frame" x="20" y="61" width="245" height="35"/>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="82" y="15" width="177" height="28"/>
@@ -414,7 +386,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Shop"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="295" y="392" width="94" height="58"/>
+                                    <rect key="frame" x="225" y="398" width="94" height="58"/>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="306" y="342" width="94" height="58"/>
@@ -431,27 +403,44 @@
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="WDj-Gp-hrm">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                    </collectionViewCell>
-                                </cells>
+                                <cells/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="110" y="122" width="150" height="50"/>
+                                    <rect key="frame" x="67" y="122" width="150" height="50"/>
                                 </variation>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFr-5G-4Of">
+                                <rect key="frame" x="481" y="354" width="75" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Enter"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="250" y="290" width="62" height="46"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="306" y="226" width="62" height="46"/>
+                                </variation>
+                                <connections>
+                                    <action selector="EnterDaNumber:" destination="z3Q-h8-ocj" eventType="touchUpInside" id="3mb-Dm-4p7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nT8-dx-0X2">
+                                <rect key="frame" x="482" y="422" width="81" height="74"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Delete"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="239" y="205" width="80" height="44"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="297" y="145" width="80" height="44"/>
+                                </variation>
+                                <connections>
+                                    <action selector="DeleteNumber:" destination="z3Q-h8-ocj" eventType="touchUpInside" id="Sy2-zj-sDk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="YYF-No-ISP"/>
-                                <exclude reference="tFr-5G-4Of"/>
                                 <exclude reference="JTz-Ez-iN9"/>
                                 <exclude reference="0jP-VZ-D43"/>
                                 <exclude reference="jWu-BD-3CZ"/>
@@ -464,7 +453,6 @@
                                 <exclude reference="Nd6-ib-7Ig"/>
                                 <exclude reference="uWf-Ig-AKc"/>
                                 <exclude reference="F8c-0P-BmE"/>
-                                <exclude reference="nT8-dx-0X2"/>
                                 <exclude reference="XPH-E8-8jY"/>
                                 <exclude reference="xl9-nY-une"/>
                                 <exclude reference="quJ-Ka-9tI"/>
@@ -485,12 +473,13 @@
                                 <exclude reference="JzM-hb-iYv"/>
                                 <exclude reference="U3J-Qt-YNG"/>
                                 <exclude reference="1UK-Ps-UGu"/>
+                                <exclude reference="tFr-5G-4Of"/>
+                                <exclude reference="nT8-dx-0X2"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="YYF-No-ISP"/>
-                                <include reference="tFr-5G-4Of"/>
                                 <include reference="JTz-Ez-iN9"/>
                                 <include reference="0jP-VZ-D43"/>
                                 <include reference="jWu-BD-3CZ"/>
@@ -503,10 +492,11 @@
                                 <include reference="Nd6-ib-7Ig"/>
                                 <include reference="uWf-Ig-AKc"/>
                                 <include reference="F8c-0P-BmE"/>
-                                <include reference="nT8-dx-0X2"/>
                                 <include reference="XPH-E8-8jY"/>
                                 <include reference="U3J-Qt-YNG"/>
                                 <include reference="1UK-Ps-UGu"/>
+                                <include reference="tFr-5G-4Of"/>
+                                <include reference="nT8-dx-0X2"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
