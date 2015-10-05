@@ -40,7 +40,7 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
         //{}
         //else
         //{scale = 1}
-        top = userlevel + 1
+        top = userlevel
         configureCollectionView()
     }
     
@@ -154,7 +154,7 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
         if adjustlabel == "Correct!"
         {
             bot = 0.0
-            top = userlevel + 1.0
+            top = userlevel
         }
         print(bot, top)
         configureCollectionView()
