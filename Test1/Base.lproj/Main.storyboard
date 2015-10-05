@@ -21,16 +21,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="55" width="320" height="46"/>
-                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpP-4z-NDf">
                                 <rect key="frame" x="67" y="377" width="186" height="132"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="2tr-Ly-Ob0"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Single Player"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="275" width="320" height="56"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="2tr-Ly-Ob0"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="2tr-Ly-Ob0"/>
+                                    </mask>
                                 </variation>
                                 <connections>
                                     <action selector="ChangeStory:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p4e-f7-efb"/>
@@ -42,6 +49,34 @@
                         <accessibility key="accessibilityConfiguration">
                             <bool key="isElement" value="YES"/>
                         </accessibility>
+                        <constraints>
+                            <constraint firstItem="B2C-Fk-rh0" firstAttribute="trailing" secondItem="kpP-4z-NDf" secondAttribute="trailing" id="EQh-ok-mjy"/>
+                            <constraint firstAttribute="trailing" secondItem="kpP-4z-NDf" secondAttribute="trailing" id="NeF-DH-M58"/>
+                            <constraint firstItem="kpP-4z-NDf" firstAttribute="leading" secondItem="B2C-Fk-rh0" secondAttribute="leading" id="RyE-Xk-AC6"/>
+                            <constraint firstItem="B2C-Fk-rh0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="35" id="SxI-kY-ARi"/>
+                            <constraint firstItem="B2C-Fk-rh0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uTp-gr-ePq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kpP-4z-NDf" secondAttribute="bottom" constant="237" id="v8e-Lc-5hB"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="EQh-ok-mjy"/>
+                                <exclude reference="SxI-kY-ARi"/>
+                                <exclude reference="uTp-gr-ePq"/>
+                                <exclude reference="NeF-DH-M58"/>
+                                <exclude reference="RyE-Xk-AC6"/>
+                                <exclude reference="v8e-Lc-5hB"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="EQh-ok-mjy"/>
+                                <include reference="SxI-kY-ARi"/>
+                                <include reference="uTp-gr-ePq"/>
+                                <include reference="NeF-DH-M58"/>
+                                <include reference="RyE-Xk-AC6"/>
+                                <include reference="v8e-Lc-5hB"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
@@ -61,23 +96,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZj-FF-GHl">
-                                <rect key="frame" x="0.0" y="530" width="138" height="70"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <state key="normal" title="Back"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="13" y="509" width="102" height="91"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="vH4-TY-Nb4"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxL-ga-BQO">
                                 <rect key="frame" x="481" y="354" width="75" height="47"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Enter"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="284" y="444" width="62" height="46"/>
+                                    <rect key="frame" x="265" y="467" width="110" height="76"/>
                                 </variation>
                                 <connections>
                                     <action selector="EnterDaNumber:" destination="mQ1-me-P1g" eventType="touchUpInside" id="mJw-NN-lc4"/>
@@ -88,7 +112,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="0"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="77" y="490" width="30" height="30"/>
+                                    <rect key="frame" x="117" y="546" width="30" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="Add0:" destination="mQ1-me-P1g" eventType="touchUpInside" id="0Um-4Q-hW6"/>
@@ -99,7 +123,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="1"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="13" y="356" width="46" height="30"/>
+                                    <rect key="frame" x="33" y="363" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="Add1:" destination="mQ1-me-P1g" eventType="touchUpInside" id="JMz-6B-oxh"/>
@@ -110,7 +134,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="2"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="69" y="356" width="46" height="30"/>
+                                    <rect key="frame" x="109" y="363" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="Add2:" destination="mQ1-me-P1g" eventType="touchUpInside" id="2JP-UO-mc3"/>
@@ -121,7 +145,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="3"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="123" y="356" width="46" height="30"/>
+                                    <rect key="frame" x="176" y="363" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="Add3:" destination="mQ1-me-P1g" eventType="touchUpInside" id="pIl-eR-LdI"/>
@@ -132,7 +156,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="4"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="13" y="400" width="46" height="30"/>
+                                    <rect key="frame" x="33" y="432" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="Add4:" destination="mQ1-me-P1g" eventType="touchUpInside" id="C6r-Oo-HFf"/>
@@ -143,7 +167,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="5"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="69" y="400" width="46" height="30"/>
+                                    <rect key="frame" x="110" y="432" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="Add5:" destination="mQ1-me-P1g" eventType="touchUpInside" id="jZm-Qg-OhS"/>
@@ -154,7 +178,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="6"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="123" y="400" width="46" height="30"/>
+                                    <rect key="frame" x="176" y="432" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="Add6:" destination="mQ1-me-P1g" eventType="touchUpInside" id="EUc-85-10E"/>
@@ -165,7 +189,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="7"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="13" y="452" width="46" height="28"/>
+                                    <rect key="frame" x="33" y="498" width="46" height="28"/>
                                 </variation>
                                 <connections>
                                     <action selector="Add7:" destination="mQ1-me-P1g" eventType="touchUpInside" id="O0j-FO-p6U"/>
@@ -176,7 +200,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="8"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="69" y="452" width="46" height="30"/>
+                                    <rect key="frame" x="110" y="497" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="Add8:" destination="mQ1-me-P1g" eventType="touchUpInside" id="Un3-uG-HLA"/>
@@ -187,19 +211,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="9"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="123" y="450" width="46" height="30"/>
+                                    <rect key="frame" x="176" y="496" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="Add9:" destination="mQ1-me-P1g" eventType="touchUpInside" id="G7W-9f-dqh"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EuS-V1-VGi">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EuS-V1-VGi">
                                 <rect key="frame" x="154" y="527" width="285" height="73"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="115" y="527" width="155" height="48"/>
+                                    <rect key="frame" x="117" y="660" width="147" height="65"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S8O-af-3G6">
@@ -207,20 +231,20 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Shop"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="286" y="522" width="94" height="58"/>
+                                    <rect key="frame" x="265" y="654" width="110" height="77"/>
                                 </variation>
                                 <connections>
                                     <action selector="ShopButton:" destination="mQ1-me-P1g" eventType="touchUpInside" id="CWm-P5-1El"/>
                                     <segue destination="I0f-5M-Y2u" kind="show" id="4JZ-Z3-Cak"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jX9-1k-pua">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jX9-1k-pua">
                                 <rect key="frame" x="90" y="289" width="228" height="31"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="312" width="49" height="29"/>
+                                    <rect key="frame" x="0.0" y="275" width="49" height="29"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibf-5h-ZOG">
@@ -228,7 +252,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Delete"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="275" y="356" width="80" height="44"/>
+                                    <rect key="frame" x="274" y="363" width="101" height="74"/>
                                 </variation>
                                 <connections>
                                     <action selector="DeleteNumber:" destination="mQ1-me-P1g" eventType="touchUpInside" id="Q9I-Ah-ANF"/>
@@ -240,7 +264,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="96" width="375" height="142"/>
+                                    <rect key="frame" x="0.0" y="45" width="375" height="142"/>
                                 </variation>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XsG-dW-aQl">
@@ -253,14 +277,24 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="99" y="275" width="200" height="66"/>
+                                    <rect key="frame" x="70" y="257" width="200" height="66"/>
                                 </variation>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZj-FF-GHl">
+                                <rect key="frame" x="0.0" y="530" width="138" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Back"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="647" width="102" height="91"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="vH4-TY-Nb4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="jZj-FF-GHl"/>
                                 <exclude reference="yxL-ga-BQO"/>
                                 <exclude reference="6l2-f8-d6v"/>
                                 <exclude reference="c6z-nm-ZCJ"/>
@@ -277,11 +311,11 @@
                                 <exclude reference="jX9-1k-pua"/>
                                 <exclude reference="Ibf-5h-ZOG"/>
                                 <exclude reference="XsG-dW-aQl"/>
+                                <exclude reference="jZj-FF-GHl"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="jZj-FF-GHl"/>
                                 <include reference="yxL-ga-BQO"/>
                                 <include reference="6l2-f8-d6v"/>
                                 <include reference="c6z-nm-ZCJ"/>
@@ -298,6 +332,7 @@
                                 <include reference="jX9-1k-pua"/>
                                 <include reference="Ibf-5h-ZOG"/>
                                 <include reference="XsG-dW-aQl"/>
+                                <include reference="jZj-FF-GHl"/>
                             </mask>
                         </variation>
                     </view>
