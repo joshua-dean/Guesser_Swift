@@ -40,7 +40,7 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
         //{}
         //else
         //{scale = 1}
-        
+        top = userlevel + 1
         configureCollectionView()
     }
     
@@ -140,6 +140,25 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
                 GuessTell.text = "Guess 1-\(userlevel)"
             }
         }
+        let guess = Double(numberguessed)
+        if adjustlabel == "Lower"
+        {
+            if guess < top
+                {top = guess}
+        }
+        if adjustlabel == "Higher"
+        {
+            if guess > bot
+                {bot = guess}
+        }
+        if adjustlabel == "Correct!"
+        {
+            bot = 0.0
+            top = userlevel + 1.0
+        }
+        print(bot, top)
+        configureCollectionView()
+        sLay.reloadData()
         
     }
     
@@ -148,7 +167,7 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
     let sHeight = UIScreen.mainScreen().bounds.size.height
     let scaleVal = 50.0 //dont change
     var scale: Double = 0.0 //dont change
-    var bot = 1.0
+    var bot = 0.0
     var top = 3.0
     /*
     sLay.reloadData()
@@ -181,6 +200,7 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let val = indexPath.row
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(cellID, forIndexPath: indexPath) as UICollectionViewCell
+        
         if(val >= Int(bot * scale) && val <= Int(top * scale))
         {cell.backgroundColor = UIColor.blueColor()}
         else
