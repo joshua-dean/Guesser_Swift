@@ -42,6 +42,15 @@ func calculateGuess(realnumber: Int, guessnumber: Int) -> String
     return adjust
 }
 
+func getAllDaShaqs() -> Double
+{
+    var shaqamount = retrieveDouble("Shaq")
+    if shaqamount == -42.0
+    {
+        shaqamount = 0.0
+    }
+    return shaqamount!
+}
 
 
 
