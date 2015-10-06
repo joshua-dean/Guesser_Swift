@@ -182,7 +182,6 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8c-0P-BmE">
                                 <rect key="frame" x="90" y="289" width="228" height="31"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="-1" y="143" width="49" height="29"/>
@@ -436,6 +435,15 @@
                                     <action selector="DeleteNumber:" destination="z3Q-h8-ocj" eventType="touchUpInside" id="Sy2-zj-sDk"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ilX-6u-HvX">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="251" y="147" width="42" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -475,6 +483,7 @@
                                 <exclude reference="1UK-Ps-UGu"/>
                                 <exclude reference="tFr-5G-4Of"/>
                                 <exclude reference="nT8-dx-0X2"/>
+                                <exclude reference="ilX-6u-HvX"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -497,6 +506,7 @@
                                 <include reference="1UK-Ps-UGu"/>
                                 <include reference="tFr-5G-4Of"/>
                                 <include reference="nT8-dx-0X2"/>
+                                <include reference="ilX-6u-HvX"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
@@ -523,6 +533,7 @@
                     </view>
                     <connections>
                         <outlet property="GuessTell" destination="F8c-0P-BmE" id="QyV-1K-aYo"/>
+                        <outlet property="PersonLevel" destination="ilX-6u-HvX" id="08Z-jk-7y6"/>
                         <outlet property="SideLabel" destination="uWf-Ig-AKc" id="LeL-4y-ea7"/>
                         <outlet property="TheNumber" destination="XPH-E8-8jY" id="SNd-zk-L1n"/>
                         <outlet property="sLay" destination="1UK-Ps-UGu" id="15a-R9-mFj"/>

@@ -34,6 +34,7 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
         //GuessTell.text = "Guess 1-\(userlevel)"
         //TheNumber.text = ""
         SideLabel.text = ""
+        PersonLevel.text = String(Int(userlevel))
         
         scale = (scaleVal / userlevel)
         //if(userlevel > scaleVal)
@@ -51,12 +52,14 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
     @IBOutlet weak var TheNumber: UILabel!
     @IBOutlet weak var SideLabel: UILabel!
     @IBOutlet weak var GuessTell: UILabel!
+    @IBOutlet weak var PersonLevel: UILabel!
     
     @IBAction func ShopButton(sender: AnyObject) {
         storeDouble("Level", value: 1)
         userlevel = 1
         //GuessTell.text = "Guess 1-\(userlevel)"
         secretnumber = generateNumber(UInt32(userlevel))
+        PersonLevel.text = String(Int(userlevel))
     }
     
     @IBAction func Add0(sender: AnyObject) {
@@ -138,6 +141,7 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
                 secretnumber = generateNumber(UInt32(userlevel))
                 guesses = 0
                 //GuessTell.text = "Guess 1-\(userlevel)"
+                PersonLevel.text = String(Int(userlevel))
             }
         }
         let guess = Double(numberguessed)
