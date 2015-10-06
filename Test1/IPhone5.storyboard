@@ -216,6 +216,12 @@
                                     <action selector="Add9:" destination="WZt-aV-po5" eventType="touchUpInside" id="50d-JB-Wvm"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="indicator_circles" translatesAutoresizingMaskIntoConstraints="NO" id="sBw-OL-j61">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="46" y="42" width="240" height="128"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -238,6 +244,7 @@
                                 <exclude reference="Lht-fq-fpY"/>
                                 <exclude reference="eAM-S8-RyX"/>
                                 <exclude reference="X0D-BZ-cNW"/>
+                                <exclude reference="sBw-OL-j61"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -260,6 +267,7 @@
                                 <include reference="Lht-fq-fpY"/>
                                 <include reference="eAM-S8-RyX"/>
                                 <include reference="X0D-BZ-cNW"/>
+                                <include reference="sBw-OL-j61"/>
                             </mask>
                         </variation>
                     </view>
@@ -268,6 +276,7 @@
                         <outlet property="PersonLevel" destination="eAM-S8-RyX" id="yeP-5j-Tiw"/>
                         <outlet property="SideLabel" destination="XLZ-qL-zSq" id="XaI-PM-5Nm"/>
                         <outlet property="TheNumber" destination="Bef-Uk-TrS" id="L0T-R3-QAW"/>
+                        <outlet property="imageView" destination="sBw-OL-j61" id="job-0n-2DU"/>
                         <outlet property="sLay" destination="Lht-fq-fpY" id="lZc-OT-JLu"/>
                     </connections>
                 </viewController>
@@ -276,4 +285,7 @@
             <point key="canvasLocation" x="204" y="312"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="indicator_circles" width="200" height="200"/>
+    </resources>
 </document>
