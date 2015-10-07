@@ -199,7 +199,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIY-Rl-BQ6">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="324" y="241" width="42" height="21"/>
@@ -216,6 +216,12 @@
                                     <action selector="DeleteNumber:" destination="mxs-fA-Zg0" eventType="touchUpInside" id="m16-qV-B8j"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PUf-7g-syH">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="72" y="40" width="240" height="128"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -238,6 +244,7 @@
                                 <exclude reference="qbP-u5-lMd"/>
                                 <exclude reference="vIY-Rl-BQ6"/>
                                 <exclude reference="W0f-7n-u7K"/>
+                                <exclude reference="PUf-7g-syH"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -260,6 +267,7 @@
                                 <include reference="qbP-u5-lMd"/>
                                 <include reference="vIY-Rl-BQ6"/>
                                 <include reference="W0f-7n-u7K"/>
+                                <include reference="PUf-7g-syH"/>
                             </mask>
                         </variation>
                     </view>
@@ -268,6 +276,7 @@
                         <outlet property="PersonLevel" destination="vIY-Rl-BQ6" id="JC3-eO-CNS"/>
                         <outlet property="SideLabel" destination="Lon-s6-Qpn" id="UH8-Dt-nKd"/>
                         <outlet property="TheNumber" destination="rhb-Fy-sFo" id="Cfg-gi-tED"/>
+                        <outlet property="imageView" destination="PUf-7g-syH" id="s1p-mU-JnQ"/>
                         <outlet property="sLay" destination="qbP-u5-lMd" id="o4d-yT-1dV"/>
                     </connections>
                 </viewController>

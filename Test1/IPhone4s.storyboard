@@ -444,6 +444,12 @@
                                     <rect key="frame" x="251" y="147" width="42" height="21"/>
                                 </variation>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2CC-3N-CTd">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="40" y="24" width="205" height="109"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -484,6 +490,7 @@
                                 <exclude reference="tFr-5G-4Of"/>
                                 <exclude reference="nT8-dx-0X2"/>
                                 <exclude reference="ilX-6u-HvX"/>
+                                <exclude reference="2CC-3N-CTd"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -507,6 +514,7 @@
                                 <include reference="tFr-5G-4Of"/>
                                 <include reference="nT8-dx-0X2"/>
                                 <include reference="ilX-6u-HvX"/>
+                                <include reference="2CC-3N-CTd"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
@@ -536,6 +544,7 @@
                         <outlet property="PersonLevel" destination="ilX-6u-HvX" id="08Z-jk-7y6"/>
                         <outlet property="SideLabel" destination="uWf-Ig-AKc" id="LeL-4y-ea7"/>
                         <outlet property="TheNumber" destination="XPH-E8-8jY" id="SNd-zk-L1n"/>
+                        <outlet property="imageView" destination="2CC-3N-CTd" id="4kG-Be-hl8"/>
                         <outlet property="sLay" destination="1UK-Ps-UGu" id="15a-R9-mFj"/>
                     </connections>
                 </viewController>

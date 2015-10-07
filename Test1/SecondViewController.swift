@@ -66,52 +66,92 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
     }
     
     @IBAction func Add0(sender: AnyObject) {
+        if guesses == 0
+        {
+            TheNumber.text = ""
+        }
         numberlabel = numberlabel + "0"
         TheNumber.text = numberlabel
     }
     
     @IBAction func Add1(sender: AnyObject) {
+        if guesses == 0
+        {
+            TheNumber.text = ""
+        }
         numberlabel = numberlabel + "1"
         TheNumber.text = numberlabel
     }
     
     @IBAction func Add2(sender: AnyObject) {
+        if guesses == 0
+        {
+            TheNumber.text = ""
+        }
         numberlabel = numberlabel + "2"
         TheNumber.text = numberlabel
     }
     
     
     @IBAction func Add3(sender: AnyObject) {
+        if guesses == 0
+        {
+            TheNumber.text = ""
+        }
         numberlabel = numberlabel + "3"
         TheNumber.text = numberlabel
     }
     
     @IBAction func Add4(sender: AnyObject) {
+        if guesses == 0
+        {
+            TheNumber.text = ""
+        }
         numberlabel = numberlabel + "4"
         TheNumber.text = numberlabel
     }
     
     @IBAction func Add5(sender: AnyObject) {
+        if guesses == 0
+        {
+            TheNumber.text = ""
+        }
         numberlabel = numberlabel + "5"
         TheNumber.text = numberlabel
     }
     
     @IBAction func Add6(sender: AnyObject) {
+        if guesses == 0
+        {
+            TheNumber.text = ""
+        }
         numberlabel = numberlabel + "6"
         TheNumber.text = numberlabel
     }
     
     @IBAction func Add7(sender: AnyObject) {
+        if guesses == 0
+        {
+            TheNumber.text = ""
+        }
         numberlabel = numberlabel + "7"
         TheNumber.text = numberlabel
     }
     
     @IBAction func Add8(sender: AnyObject) {
+        if guesses == 0
+        {
+            TheNumber.text = ""
+        }
         numberlabel = numberlabel + "8"
         TheNumber.text = numberlabel
     }
     
     @IBAction func Add9(sender: AnyObject) {
+        if guesses == 0
+        {
+            TheNumber.text = ""
+        }
         numberlabel = numberlabel + "9"
         TheNumber.text = numberlabel
     }
@@ -132,10 +172,11 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
             guesses++
             adjustlabel = calculateGuess(secretnumber, guessnumber: numberguessed)
             SideLabel.text = adjustlabel
-            TheNumber.text = ""
+            //TheNumber.text = ""
             numberlabel = ""
             if adjustlabel == "Correct!"
             {
+                imageView.image = UIImage(named:"Green_Circle")
                 if guesses == 1
                 {
                     userlevel++
@@ -145,6 +186,10 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
                 guesses = 0
                 //GuessTell.text = "Guess 1-\(userlevel)"
                 PersonLevel.text = String(Int(userlevel))
+            }
+            else
+            {
+                imageView.image = UIImage(named:"Red_Circle.png")
             }
         }
         let guess = Double(numberguessed)

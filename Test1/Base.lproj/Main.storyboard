@@ -299,6 +299,12 @@
                                     <action selector="Add9:" destination="mQ1-me-P1g" eventType="touchUpInside" id="G7W-9f-dqh"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ufi-XK-Jne">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="53" y="37" width="274" height="158"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -321,6 +327,7 @@
                                 <exclude reference="EWt-Hu-BcX"/>
                                 <exclude reference="SqL-1A-Yc3"/>
                                 <exclude reference="SlW-JX-Lkt"/>
+                                <exclude reference="Ufi-XK-Jne"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -343,6 +350,7 @@
                                 <include reference="EWt-Hu-BcX"/>
                                 <include reference="SqL-1A-Yc3"/>
                                 <include reference="SlW-JX-Lkt"/>
+                                <include reference="Ufi-XK-Jne"/>
                             </mask>
                         </variation>
                     </view>
@@ -352,6 +360,7 @@
                         <outlet property="PersonLevel" destination="LPb-9v-kJL" id="nDu-N9-8SG"/>
                         <outlet property="SideLabel" destination="EuS-V1-VGi" id="7eH-s8-pvP"/>
                         <outlet property="TheNumber" destination="L9U-Db-aCv" id="kPE-ZV-xa5"/>
+                        <outlet property="imageView" destination="Ufi-XK-Jne" id="H1K-ca-eHC"/>
                         <outlet property="sLay" destination="XsG-dW-aQl" id="1y0-Nt-nQ6"/>
                     </connections>
                 </viewController>
@@ -368,7 +377,7 @@
                         <viewControllerLayoutGuide type="bottom" id="t9s-4k-FGZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Udr-ee-TBN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mfy-pr-0Lm">
