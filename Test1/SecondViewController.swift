@@ -189,7 +189,7 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
             }
             else
             {
-                imageView.image = UIImage(named:"Red_Circle.png")
+                imageView.image = UIImage(named:"Red_Circle")
             }
         }
         let guess = Double(numberguessed)
