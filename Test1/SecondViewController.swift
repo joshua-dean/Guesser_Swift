@@ -48,6 +48,7 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
         PersonLevel.text = String(Int(userlevel))
         configureCollectionView()
         sLay.reloadData()
+        storeDouble("Level", value: userlevel)
     }
     
     override func didReceiveMemoryWarning() {
@@ -219,7 +220,6 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
         print(bot, top)
         configureCollectionView()
         sLay.reloadData()
-        
     }
     
     let cellID = "CellIdentifier"

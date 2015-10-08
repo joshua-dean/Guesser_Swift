@@ -204,19 +204,6 @@
                                     <action selector="ShopButton:" destination="z3Q-h8-ocj" eventType="touchUpInside" id="hwr-al-epp"/>
                                 </connections>
                             </button>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1UK-Ps-UGu">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MyX-Aq-37r">
-                                    <size key="itemSize" width="50" height="50"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="68" y="151" width="150" height="50"/>
-                                </variation>
-                            </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFr-5G-4Of">
                                 <rect key="frame" x="481" y="354" width="75" height="47"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -456,6 +443,19 @@
                                     <rect key="frame" x="0.0" y="38" width="120" height="110"/>
                                 </variation>
                             </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1UK-Ps-UGu">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MyX-Aq-37r">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="67" y="156" width="150" height="50"/>
+                                </variation>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -474,7 +474,6 @@
                                 <exclude reference="uWf-Ig-AKc"/>
                                 <exclude reference="F8c-0P-BmE"/>
                                 <exclude reference="U3J-Qt-YNG"/>
-                                <exclude reference="1UK-Ps-UGu"/>
                                 <exclude reference="tFr-5G-4Of"/>
                                 <exclude reference="nT8-dx-0X2"/>
                                 <exclude reference="ilX-6u-HvX"/>
@@ -498,6 +497,7 @@
                                 <exclude reference="JzM-hb-iYv"/>
                                 <exclude reference="2CC-3N-CTd"/>
                                 <exclude reference="2B0-r7-Z6b"/>
+                                <exclude reference="1UK-Ps-UGu"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -516,13 +516,13 @@
                                 <include reference="uWf-Ig-AKc"/>
                                 <include reference="F8c-0P-BmE"/>
                                 <include reference="U3J-Qt-YNG"/>
-                                <include reference="1UK-Ps-UGu"/>
                                 <include reference="tFr-5G-4Of"/>
                                 <include reference="nT8-dx-0X2"/>
                                 <include reference="ilX-6u-HvX"/>
                                 <include reference="XPH-E8-8jY"/>
                                 <include reference="2CC-3N-CTd"/>
                                 <include reference="2B0-r7-Z6b"/>
+                                <include reference="1UK-Ps-UGu"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">

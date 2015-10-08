@@ -23,6 +23,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    
     @IBAction func ChangeStory(sender: AnyObject) {
         let screenheight = UIScreen.mainScreen().bounds.size.height
         if screenheight == 667.0
