@@ -12,7 +12,7 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     var numberguessed = 0
     var numberlength = 0
-    var guesses = 0;
+    var guesses = 0
     var numberlabel = ""
     var adjustlabel = ""
     var secretnumber = 0
