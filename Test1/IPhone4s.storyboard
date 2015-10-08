@@ -450,6 +450,12 @@
                                     <rect key="frame" x="140" y="28" width="120" height="120"/>
                                 </variation>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2B0-r7-Z6b">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="38" width="120" height="110"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -491,6 +497,7 @@
                                 <exclude reference="vhg-OG-Zjy"/>
                                 <exclude reference="JzM-hb-iYv"/>
                                 <exclude reference="2CC-3N-CTd"/>
+                                <exclude reference="2B0-r7-Z6b"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -515,6 +522,7 @@
                                 <include reference="ilX-6u-HvX"/>
                                 <include reference="XPH-E8-8jY"/>
                                 <include reference="2CC-3N-CTd"/>
+                                <include reference="2B0-r7-Z6b"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
@@ -540,6 +548,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="Arrows" destination="2B0-r7-Z6b" id="1mX-do-vWK"/>
                         <outlet property="GuessTell" destination="F8c-0P-BmE" id="QyV-1K-aYo"/>
                         <outlet property="PersonLevel" destination="ilX-6u-HvX" id="08Z-jk-7y6"/>
                         <outlet property="SideLabel" destination="uWf-Ig-AKc" id="LeL-4y-ea7"/>

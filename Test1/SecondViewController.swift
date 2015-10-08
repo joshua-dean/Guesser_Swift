@@ -43,6 +43,11 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
         //{scale = 1}
         top = userlevel
         configureCollectionView()
+        userlevel = 50.0
+        top = userlevel
+        PersonLevel.text = String(Int(userlevel))
+        configureCollectionView()
+        sLay.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
@@ -54,7 +59,7 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
     @IBOutlet weak var GuessTell: UILabel!
     @IBOutlet weak var PersonLevel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
-    
+    @IBOutlet weak var Arrows: UIImageView!
     
     @IBAction func ShopButton(sender: AnyObject) {
         storeDouble("Level", value: 1)
@@ -177,6 +182,7 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
             if adjustlabel == "Correct!"
             {
                 imageView.image = UIImage(named:"Green_Circle")
+                Arrows.image = UIImage(named: "blank")
                 if guesses == 1
                 {
                     userlevel++
@@ -195,11 +201,13 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
         let guess = Double(numberguessed)
         if adjustlabel == "Lower"
         {
+            Arrows.image = UIImage(named: "red_filled")
             if guess < top
                 {top = guess}
         }
         if adjustlabel == "Higher"
         {
+            Arrows.image = UIImage(named: "green_filled")
             if guess > bot
                 {bot = guess}
         }

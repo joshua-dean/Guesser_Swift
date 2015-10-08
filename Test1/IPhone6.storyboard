@@ -222,6 +222,12 @@
                                     <rect key="frame" x="324" y="259" width="42" height="21"/>
                                 </variation>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jOW-3b-aN2">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="6" y="67" width="140" height="125"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -245,6 +251,7 @@
                                 <exclude reference="KZ6-ca-uO7"/>
                                 <exclude reference="qbP-u5-lMd"/>
                                 <exclude reference="vIY-Rl-BQ6"/>
+                                <exclude reference="jOW-3b-aN2"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -268,10 +275,12 @@
                                 <include reference="KZ6-ca-uO7"/>
                                 <include reference="qbP-u5-lMd"/>
                                 <include reference="vIY-Rl-BQ6"/>
+                                <include reference="jOW-3b-aN2"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="Arrows" destination="jOW-3b-aN2" id="8SF-x0-Tn6"/>
                         <outlet property="GuessTell" destination="KZ6-ca-uO7" id="lLQ-YP-H8L"/>
                         <outlet property="PersonLevel" destination="vIY-Rl-BQ6" id="JC3-eO-CNS"/>
                         <outlet property="SideLabel" destination="Lon-s6-Qpn" id="UH8-Dt-nKd"/>
