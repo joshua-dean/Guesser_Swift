@@ -183,11 +183,11 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
             numberlabel = ""
             if adjustlabel == "Correct!"
             {
-                SideLabel.text = "Level Up!"
                 imageView.image = UIImage(named:"Green_Circle")
                 Arrows.image = UIImage(named: "blank")
                 if guesses == 1
                 {
+                    SideLabel.text = "Level Up!"
                     userlevel++
                     storeDouble("Level", value: Double(userlevel))
                 }
