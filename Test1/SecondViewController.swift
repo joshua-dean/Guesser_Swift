@@ -43,7 +43,7 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
         //{scale = 1}
         top = userlevel
         configureCollectionView()
-        userlevel = 50.0
+        //userlevel = 50.0
         top = userlevel
         PersonLevel.text = String(Int(userlevel))
         configureCollectionView()
@@ -68,7 +68,8 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
         //GuessTell.text = "Guess 1-\(userlevel)"
         secretnumber = generateNumber(UInt32(userlevel))
         PersonLevel.text = String(Int(userlevel))
-        
+        configureCollectionView()
+        sLay.reloadData()
     }
     
     @IBAction func Add0(sender: AnyObject) {
@@ -182,6 +183,7 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
             numberlabel = ""
             if adjustlabel == "Correct!"
             {
+                SideLabel.text = "Level Up!"
                 imageView.image = UIImage(named:"Green_Circle")
                 Arrows.image = UIImage(named: "blank")
                 if guesses == 1

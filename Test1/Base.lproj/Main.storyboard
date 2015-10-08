@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9046" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,27 +17,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Title_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="z1m-if-eIG">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="38" width="320" height="153"/>
-                                </variation>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpP-4z-NDf">
                                 <rect key="frame" x="67" y="377" width="186" height="132"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="gH5-bu-Dml"/>
+                                    <constraint firstAttribute="height" constant="56" id="ZUk-TT-OZf"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Single Player"/>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="gH5-bu-Dml"/>
+                                        <exclude reference="ZUk-TT-OZf"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="gH5-bu-Dml"/>
+                                        <include reference="ZUk-TT-OZf"/>
                                     </mask>
                                 </variation>
                                 <connections>
@@ -44,30 +39,46 @@
                                     <segue destination="mQ1-me-P1g" kind="show" id="KQc-54-NZw"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Title_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="z1m-if-eIG">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="136" id="fbe-7k-3v9"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="fbe-7k-3v9"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="fbe-7k-3v9"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <accessibility key="accessibilityConfiguration">
                             <bool key="isElement" value="YES"/>
                         </accessibility>
                         <constraints>
-                            <constraint firstItem="z1m-if-eIG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="18" id="H90-6d-Dd7"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kpP-4z-NDf" secondAttribute="bottom" constant="199" id="H9U-nx-UXk"/>
-                            <constraint firstAttribute="trailing" secondItem="kpP-4z-NDf" secondAttribute="trailing" id="LbR-bE-2vh"/>
-                            <constraint firstItem="kpP-4z-NDf" firstAttribute="trailing" secondItem="z1m-if-eIG" secondAttribute="trailing" id="Yzg-e7-CJv"/>
-                            <constraint firstItem="z1m-if-eIG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bke-Yn-k0W"/>
-                            <constraint firstItem="kpP-4z-NDf" firstAttribute="leading" secondItem="z1m-if-eIG" secondAttribute="leading" id="dc3-vh-R1j"/>
+                            <constraint firstItem="z1m-if-eIG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="Cie-Pt-6wZ"/>
+                            <constraint firstAttribute="trailing" secondItem="kpP-4z-NDf" secondAttribute="trailing" id="cOr-Pn-WJa"/>
+                            <constraint firstItem="z1m-if-eIG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-6" id="ghO-f1-blm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kpP-4z-NDf" secondAttribute="bottom" constant="199" id="iA5-sb-JLW"/>
+                            <constraint firstItem="kpP-4z-NDf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jDj-Yq-76b"/>
+                            <constraint firstItem="kpP-4z-NDf" firstAttribute="centerX" secondItem="z1m-if-eIG" secondAttribute="centerX" id="sqi-bW-ZXw"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="z1m-if-eIG"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="H90-6d-Dd7"/>
-                                <exclude reference="bke-Yn-k0W"/>
-                                <exclude reference="LbR-bE-2vh"/>
-                                <exclude reference="Yzg-e7-CJv"/>
-                                <exclude reference="dc3-vh-R1j"/>
-                                <exclude reference="H9U-nx-UXk"/>
+                                <exclude reference="Cie-Pt-6wZ"/>
+                                <exclude reference="ghO-f1-blm"/>
+                                <exclude reference="cOr-Pn-WJa"/>
+                                <exclude reference="jDj-Yq-76b"/>
+                                <exclude reference="sqi-bW-ZXw"/>
+                                <exclude reference="iA5-sb-JLW"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -75,12 +86,12 @@
                                 <include reference="z1m-if-eIG"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="H90-6d-Dd7"/>
-                                <include reference="bke-Yn-k0W"/>
-                                <include reference="LbR-bE-2vh"/>
-                                <include reference="Yzg-e7-CJv"/>
-                                <include reference="dc3-vh-R1j"/>
-                                <include reference="H9U-nx-UXk"/>
+                                <include reference="Cie-Pt-6wZ"/>
+                                <include reference="ghO-f1-blm"/>
+                                <include reference="cOr-Pn-WJa"/>
+                                <include reference="jDj-Yq-76b"/>
+                                <include reference="sqi-bW-ZXw"/>
+                                <include reference="iA5-sb-JLW"/>
                             </mask>
                         </variation>
                     </view>
