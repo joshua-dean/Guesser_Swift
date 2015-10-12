@@ -41,6 +41,7 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
         configureCollectionView()
         sLay.reloadData()  //refresh bar
         storeDouble("Level", value: userlevel)
+        GuessTell.text = "1"
     }
     
     override func didReceiveMemoryWarning() {
