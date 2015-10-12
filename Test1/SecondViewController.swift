@@ -13,12 +13,10 @@ import UIKit
 class SecondViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     var numberguessed = 0   //user in
-    //var numberlength = 0    //@Connor knows this @unussed
     var guesses = 0         //Number of guesses since correct, used in economy
     var numberlabel = ""
     var adjustlabel = ""    //Labels used by @Connor
     var secretnumber = 0    //number for guess desire
-    //var retarded: Double? = -42 //used for debuging, no longer needed?
     var userlevel = 0.0
     
     
@@ -33,20 +31,14 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
         }
         userlevel = Double(level!)
         secretnumber = generateNumber(UInt32(userlevel))
-        //GuessTell.text = "Guess 1-\(userlevel)"
-        //TheNumber.text = ""
         SideLabel.text = ""
         PersonLevel.text = String(Int(userlevel))  //various assigning
         
         scale = (scaleVal / userlevel)
-        //if(userlevel > scaleVal)
-        //{}
-        //else
-        //{scale = 1}
         top = userlevel
         configureCollectionView()  //setup custom progress bar (i.e. number of cells changed)
-        //userlevel = 50.0
         top = userlevel
+        
         PersonLevel.text = String(Int(userlevel))
         configureCollectionView()
         sLay.reloadData()  //refresh bar
@@ -67,7 +59,6 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
     @IBAction func ShopButton(sender: AnyObject) {
         storeDouble("Level", value: 1)
         userlevel = 1
-        //GuessTell.text = "Guess 1-\(userlevel)"
         secretnumber = generateNumber(UInt32(userlevel))
         PersonLevel.text = String(Int(userlevel))
         configureCollectionView()
@@ -184,7 +175,6 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
             guesses++
             adjustlabel = calculateGuess(secretnumber, guessnumber: numberguessed)
             SideLabel.text = adjustlabel
-            //TheNumber.text = ""
             numberlabel = ""
             if adjustlabel == "Correct!"
             {
@@ -225,7 +215,7 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
             bot = 0.0
             top = userlevel
         }
-        print(bot, top)
+        //print(bot, top) //debug
         configureCollectionView()
         sLay.reloadData()
     }
@@ -237,10 +227,6 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
     var scale: Double = 0.0 //dont change
     var bot = 0.0
     var top = 3.0
-    /*
-    sLay.reloadData()
-    configureCollectionView()
-    */
     
     @IBOutlet weak var sLay: UICollectionView!
     //decides number of cells based on scale and userlevel
