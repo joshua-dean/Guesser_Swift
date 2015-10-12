@@ -47,9 +47,32 @@ func getAllDaShaqs() -> Double
     var shaqamount = retrieveDouble("Shaq")
     if shaqamount == -42.0
     {
+        storeDouble("Shaq", value: 0)
         shaqamount = 0.0
     }
     return shaqamount!
+}
+
+func getAllDaLevels() -> Double
+{
+    var levelamount = retrieveDouble("Level")
+    if levelamount == -42.0
+    {
+        storeDouble("Level", value: 1)
+        levelamount = 0.0
+    }
+    return levelamount!
+}
+
+func getAllDaKobes() -> Double
+{
+    var kobeamount = retrieveDouble("Kobe")
+    if kobeamount == -42.0
+    {
+        storeDouble("Kobe", value: 0)
+        kobeamount = 0.0
+    }
+    return kobeamount!
 }
 
 

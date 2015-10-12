@@ -18,18 +18,16 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
     var adjustlabel = ""    //Labels used by @Connor
     var secretnumber = 0    //number for guess desire
     var userlevel = 0.0
+    var shaqs = 0.0
+    var kobes = 0.0
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        var level: Double? = retrieveDouble("Level")
-        if retrieveDouble("Level") == nolevel
-        {
-            level = 1
-            storeDouble("Level", value: 1)
-        }
-        userlevel = Double(level!)
+        userlevel = getAllDaLevels()
+        shaqs = getAllDaShaqs()
+        kobes = getAllDaKobes()
         secretnumber = generateNumber(UInt32(userlevel))
         SideLabel.text = ""
         PersonLevel.text = String(Int(userlevel))  //various assigning
@@ -55,14 +53,10 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
     @IBOutlet weak var PersonLevel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var Arrows: UIImageView!
+    @IBOutlet weak var LevelSay: UILabel!
     
     @IBAction func ShopButton(sender: AnyObject) {
-        storeDouble("Level", value: 1)
-        userlevel = 1
-        secretnumber = generateNumber(UInt32(userlevel))
-        PersonLevel.text = String(Int(userlevel))
-        configureCollectionView()
-        sLay.reloadData()
+        
     }
     
     /*

@@ -202,6 +202,7 @@
                                 </variation>
                                 <connections>
                                     <action selector="ShopButton:" destination="z3Q-h8-ocj" eventType="touchUpInside" id="hwr-al-epp"/>
+                                    <segue destination="qNu-G2-73N" kind="show" id="3N5-a1-pGU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFr-5G-4Of">
@@ -456,6 +457,15 @@
                                     <rect key="frame" x="67" y="156" width="150" height="50"/>
                                 </variation>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sqk-ub-O4t">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="235" y="149" width="74" height="25"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -498,6 +508,7 @@
                                 <exclude reference="2CC-3N-CTd"/>
                                 <exclude reference="2B0-r7-Z6b"/>
                                 <exclude reference="1UK-Ps-UGu"/>
+                                <exclude reference="Sqk-ub-O4t"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -523,6 +534,7 @@
                                 <include reference="2CC-3N-CTd"/>
                                 <include reference="2B0-r7-Z6b"/>
                                 <include reference="1UK-Ps-UGu"/>
+                                <include reference="Sqk-ub-O4t"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
@@ -550,6 +562,7 @@
                     <connections>
                         <outlet property="Arrows" destination="2B0-r7-Z6b" id="1mX-do-vWK"/>
                         <outlet property="GuessTell" destination="F8c-0P-BmE" id="QyV-1K-aYo"/>
+                        <outlet property="LevelSay" destination="Sqk-ub-O4t" id="02W-di-Ag9"/>
                         <outlet property="PersonLevel" destination="ilX-6u-HvX" id="08Z-jk-7y6"/>
                         <outlet property="SideLabel" destination="uWf-Ig-AKc" id="LeL-4y-ea7"/>
                         <outlet property="TheNumber" destination="XPH-E8-8jY" id="SNd-zk-L1n"/>
@@ -560,6 +573,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qkt-2e-cNg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="508.5" y="15"/>
+        </scene>
+        <!--Shop View Controller-->
+        <scene sceneID="ZKI-aT-K80">
+            <objects>
+                <viewController id="qNu-G2-73N" customClass="ShopViewController" customModule="Test1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ymh-oD-wer"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZsC-go-JEn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="p8g-zK-dX6">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zVF-cl-SsP">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="111" y="371" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="z3Q-h8-ocj" kind="show" id="b99-DK-scU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="zVF-cl-SsP"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="zVF-cl-SsP"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L4l-70-vNg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1303.5" y="34"/>
         </scene>
     </scenes>
 </document>
