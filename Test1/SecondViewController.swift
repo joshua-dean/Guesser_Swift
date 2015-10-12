@@ -5,18 +5,20 @@
 //  Created by WENDOLEK, CONNOR on 9/17/15.
 //  Copyright © 2015 Josh. All rights reserved.
 //
+//  Poorly named ViewController for the GameUI
+//
 
 import UIKit
 
 class SecondViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
-    var numberguessed = 0
-    var numberlength = 0
-    var guesses = 0
+    var numberguessed = 0   //user in
+    //var numberlength = 0    //@Connor knows this @unussed
+    var guesses = 0         //Number of guesses since correct, used in economy
     var numberlabel = ""
-    var adjustlabel = ""
-    var secretnumber = 0
-    var retarded: Double? = -42
+    var adjustlabel = ""    //Labels used by @Connor
+    var secretnumber = 0    //number for guess desire
+    //var retarded: Double? = -42 //used for debuging, no longer needed?
     var userlevel = 0.0
     
     
@@ -24,7 +26,7 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         var level: Double? = retrieveDouble("Level")
-        if retrieveDouble("Level") == retarded
+        if retrieveDouble("Level") == -42
         {
             level = 1
             storeDouble("Level", value: 1)
@@ -34,7 +36,7 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
         //GuessTell.text = "Guess 1-\(userlevel)"
         //TheNumber.text = ""
         SideLabel.text = ""
-        PersonLevel.text = String(Int(userlevel))
+        PersonLevel.text = String(Int(userlevel))  //various assigning
         
         scale = (scaleVal / userlevel)
         //if(userlevel > scaleVal)
@@ -42,12 +44,12 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
         //else
         //{scale = 1}
         top = userlevel
-        configureCollectionView()
+        configureCollectionView()  //setup custom progress bar (i.e. number of cells changed)
         //userlevel = 50.0
         top = userlevel
         PersonLevel.text = String(Int(userlevel))
         configureCollectionView()
-        sLay.reloadData()
+        sLay.reloadData()  //refresh bar
         storeDouble("Level", value: userlevel)
     }
     
@@ -72,6 +74,9 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
         sLay.reloadData()
     }
     
+    /*
+     * @Connor refused to use the native numberpad, so we must do this stuff
+     */
     @IBAction func Add0(sender: AnyObject) {
         if guesses == 0
         {
@@ -171,7 +176,7 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
         }
     }
     
-    
+    //Evalutes user in
     @IBAction func EnterDaNumber(sender: AnyObject) {
         if numberlabel != ""
         {
@@ -201,6 +206,7 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
                 imageView.image = UIImage(named:"Red_Circle")
             }
         }
+        //Arrow and ProgressBar logic
         let guess = Double(numberguessed)
         if adjustlabel == "Lower"
         {
@@ -227,7 +233,7 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
     let cellID = "CellIdentifier"
     let sWidth  = UIScreen.mainScreen().bounds.size.width
     let sHeight = UIScreen.mainScreen().bounds.size.height
-    let scaleVal = 50.0 //dont change
+    let scaleVal = 50.0 //dont change //realistically these could be one constant, but lazy
     var scale: Double = 0.0 //dont change
     var bot = 0.0
     var top = 3.0
@@ -237,7 +243,7 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
     */
     
     @IBOutlet weak var sLay: UICollectionView!
-    
+    //decides number of cells based on scale and userlevel
     func configureCollectionView() {
         
         let cellWidth = sLay.bounds.width / CGFloat(userlevel * scale)

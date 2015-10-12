@@ -5,6 +5,8 @@
 //  Created by DEAN, JOSHUA on 9/16/15.
 //  Copyright © 2015 Josh. All rights reserved.
 //
+//  Used for the main screen
+//
 
 import UIKit
 
@@ -24,7 +26,9 @@ class ViewController: UIViewController {
     }
     
     
-    
+    /*
+     *  Makes a decision based on screen size to have a scaled storyboard
+     */
     @IBAction func ChangeStory(sender: AnyObject) {
         let screenheight = UIScreen.mainScreen().bounds.size.height
         if screenheight == 667.0
