@@ -9,11 +9,11 @@
 import Foundation
 
 let defaults = NSUserDefaults.standardUserDefaults()
+let nolevel = -42.0
+
 func storeDouble(name: String, value: Double)
 {
     defaults.setValue(String(value), forKey: name);
-    //defaults.setValue
-    
     defaults.synchronize()
 }
 
@@ -23,7 +23,5 @@ func retrieveDouble(name: String) -> Double?
     {
         return potatoe.doubleValue
     }
-
-        return -42.0
-    
+    return nolevel
 }

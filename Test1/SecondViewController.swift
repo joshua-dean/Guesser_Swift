@@ -24,7 +24,7 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         var level: Double? = retrieveDouble("Level")
-        if retrieveDouble("Level") == -42
+        if retrieveDouble("Level") == nolevel
         {
             level = 1
             storeDouble("Level", value: 1)
