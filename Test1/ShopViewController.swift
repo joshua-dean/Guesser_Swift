@@ -10,16 +10,16 @@ import UIKit
 
 class ShopViewController: UIViewController {
     
-    var shaqs = 0.0
-    var kobes = 0.0
+    var theshaqs = 0
+    var thekobes = 0
+    var randomnumber = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        //kobes = getAllDaKobes()
-        //shaqs = getAllDaShaqs()
-        //DaShaqAmount.text = String(shaqs)
-        //DaKobeAmount.text = String(kobes)
+        theshaqs = Int(getAllDaShaqs())
+        thekobes = Int(getAllDaKobes())
+        DaShaqAmount.text = String(theshaqs)
+        DaKobeAmount.text = String(thekobes)
     }
     
     override func didReceiveMemoryWarning() {
@@ -27,9 +27,30 @@ class ShopViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBOutlet weak var DaShaq: UILabel!
     @IBOutlet weak var DaShaqAmount: UILabel!
-    @IBOutlet weak var DaKobe: UILabel!
     @IBOutlet weak var DaKobeAmount: UILabel!
+    @IBOutlet weak var BuyKobeAmount: UILabel!
+    
+    @IBAction func BuyDaKobe(sender: AnyObject) {
+        if theshaqs > 999
+        {
+            theshaqs -= 1000
+            randomnumber = Int(arc4random_uniform(1000))
+            randomnumber++
+            thekobes += randomnumber
+            storeDouble("Shaq", value: Double(theshaqs))
+            storeDouble("Kobe", value: Double(thekobes))
+            BuyKobeAmount.text = ("You got \(randomnumber) Kobes!")
+            theshaqs = Int(getAllDaShaqs())
+            thekobes = Int(getAllDaKobes())
+            DaShaqAmount.text = String(theshaqs)
+            DaKobeAmount.text = String(thekobes)
+        }
+        else
+        {
+            BuyKobeAmount.text = "Not enough Shaqs"
+        }
+    }
+    
     
 }

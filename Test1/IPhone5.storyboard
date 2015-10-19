@@ -235,7 +235,7 @@
                                 </variation>
                                 <connections>
                                     <action selector="ShopButton:" destination="WZt-aV-po5" eventType="touchUpInside" id="Nvk-Yd-8a1"/>
-                                    <segue destination="alV-Yf-0Yo" kind="show" id="1CX-K4-f7d"/>
+                                    <segue destination="KGo-dp-Mr4" kind="show" id="Th8-Mw-UBZ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -307,98 +307,117 @@
             <point key="canvasLocation" x="204" y="312"/>
         </scene>
         <!--Shop View Controller-->
-        <scene sceneID="8G2-5h-XM7">
+        <scene sceneID="eGy-Uo-qXH">
             <objects>
-                <viewController storyboardIdentifier="ShopViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="alV-Yf-0Yo" customClass="ShopViewController" customModule="Test1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KGo-dp-Mr4" customClass="ShopViewController" customModule="Test1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="K3P-9s-Brs"/>
-                        <viewControllerLayoutGuide type="bottom" id="MvE-az-BTY"/>
+                        <viewControllerLayoutGuide type="top" id="wMd-bN-B7e"/>
+                        <viewControllerLayoutGuide type="bottom" id="i8T-x3-mMU"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="IjU-rr-D1w">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="j9L-Zg-qk3">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYc-KS-FZR">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8K1-sc-Pxj">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Back"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="497" width="81" height="65"/>
+                                    <rect key="frame" x="0.0" y="497" width="94" height="58"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="WZt-aV-po5" kind="show" id="Ckx-2d-bvk"/>
+                                    <segue destination="WZt-aV-po5" kind="show" id="242-vx-Eac"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shaqs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdC-3X-QQv">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shaqs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEy-6J-AZh">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="39" y="52" width="89" height="59"/>
+                                    <rect key="frame" x="26" y="28" width="120" height="81"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kobes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lb5-qt-JyX">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVo-7n-M6B">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="198" y="52" width="89" height="59"/>
+                                    <rect key="frame" x="26" y="117" width="120" height="81"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHk-z3-WcE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kobes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7C-K5-Avh">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="39" y="127" width="89" height="59"/>
+                                    <rect key="frame" x="193" y="28" width="120" height="81"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qem-BS-wVn">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hr4-21-CFb">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="198" y="127" width="89" height="59"/>
+                                    <rect key="frame" x="193" y="117" width="120" height="81"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhE-Or-3ay">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Buy Kobes"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="24" y="271" width="110" height="58"/>
+                                </variation>
+                                <connections>
+                                    <action selector="BuyDaKobe:" destination="KGo-dp-Mr4" eventType="touchUpInside" id="1lS-Vw-j2p"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bS9-VO-jCI">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="24" y="337" width="187" height="58"/>
                                 </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="DYc-KS-FZR"/>
-                                <exclude reference="GdC-3X-QQv"/>
-                                <exclude reference="Lb5-qt-JyX"/>
-                                <exclude reference="aHk-z3-WcE"/>
-                                <exclude reference="Qem-BS-wVn"/>
+                                <exclude reference="8K1-sc-Pxj"/>
+                                <exclude reference="SEy-6J-AZh"/>
+                                <exclude reference="WVo-7n-M6B"/>
+                                <exclude reference="e7C-K5-Avh"/>
+                                <exclude reference="hr4-21-CFb"/>
+                                <exclude reference="QhE-Or-3ay"/>
+                                <exclude reference="bS9-VO-jCI"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="DYc-KS-FZR"/>
-                                <include reference="GdC-3X-QQv"/>
-                                <include reference="Lb5-qt-JyX"/>
-                                <include reference="aHk-z3-WcE"/>
-                                <include reference="Qem-BS-wVn"/>
+                                <include reference="8K1-sc-Pxj"/>
+                                <include reference="SEy-6J-AZh"/>
+                                <include reference="WVo-7n-M6B"/>
+                                <include reference="e7C-K5-Avh"/>
+                                <include reference="hr4-21-CFb"/>
+                                <include reference="QhE-Or-3ay"/>
+                                <include reference="bS9-VO-jCI"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="DaKobe" destination="Lb5-qt-JyX" id="T28-XR-pCA"/>
-                        <outlet property="DaKobeAmount" destination="Qem-BS-wVn" id="hHt-4I-3jt"/>
-                        <outlet property="DaKobes" destination="Lb5-qt-JyX" id="3Se-yh-haD"/>
-                        <outlet property="DaShaq" destination="GdC-3X-QQv" id="aCL-Zu-Z2h"/>
-                        <outlet property="DaShaqAmount" destination="aHk-z3-WcE" id="Zg8-tI-lbU"/>
-                        <outlet property="DaShaqs" destination="GdC-3X-QQv" id="IL9-GD-9Er"/>
-                        <outlet property="Shaqs" destination="GdC-3X-QQv" id="LDF-ra-xvF"/>
+                        <outlet property="BuyKobeAmount" destination="bS9-VO-jCI" id="iLz-ub-9r5"/>
+                        <outlet property="DaKobeAmount" destination="hr4-21-CFb" id="9FU-0N-qh3"/>
+                        <outlet property="DaShaqAmount" destination="WVo-7n-M6B" id="aAo-NP-gPf"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eEP-ZE-JjW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c13-70-ayf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="865.5" y="312"/>
+            <point key="canvasLocation" x="1005" y="316"/>
         </scene>
     </scenes>
 </document>
