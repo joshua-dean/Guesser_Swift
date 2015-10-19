@@ -25,6 +25,9 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        storeDouble("Level", value: 1.0)
+        storeDouble("Shaq", value: 0.0)
+        storeDouble("Kobe", value: 0.0)
         userlevel = getAllDaLevels()
         shaqs = getAllDaShaqs()
         kobes = getAllDaKobes()
@@ -175,6 +178,8 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
             {
                 imageView.image = UIImage(named:"Green_Circle")
                 Arrows.image = UIImage(named: "blank")
+                shaqs += Double(calculateShaqs(guesses, level: Int(userlevel)))
+                storeDouble("Shaq", value: shaqs)
                 if guesses == 1
                 {
                     SideLabel.text = "Level Up!"
