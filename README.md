@@ -21,4 +21,4 @@ Please guess responsibly.
 
 
 
-@COPYLEFT ALL WRONGS RESERVED
+(ɔ)COPYLEFT ALL WRONGS RESERVED
