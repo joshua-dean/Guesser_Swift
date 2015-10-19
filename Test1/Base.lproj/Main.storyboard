@@ -154,7 +154,7 @@
                                 </variation>
                                 <connections>
                                     <action selector="ShopButton:" destination="mQ1-me-P1g" eventType="touchUpInside" id="CWm-P5-1El"/>
-                                    <segue destination="I0f-5M-Y2u" kind="show" id="GL2-Tj-8Lw"/>
+                                    <segue destination="I0f-5M-Y2u" kind="show" id="bIM-xj-4XM"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jX9-1k-pua">
@@ -416,7 +416,7 @@
                         <viewControllerLayoutGuide type="top" id="63D-QG-P1d"/>
                         <viewControllerLayoutGuide type="bottom" id="t9s-4k-FGZ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Udr-ee-TBN" customClass="Shop">
+                    <view key="view" contentMode="scaleToFill" id="Udr-ee-TBN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>

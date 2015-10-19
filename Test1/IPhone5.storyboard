@@ -143,18 +143,6 @@
                                     <rect key="frame" x="100" y="506" width="155" height="48"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Kd-ZX-kd0">
-                                <rect key="frame" x="481" y="517" width="119" height="83"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Shop"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="224" y="501" width="94" height="58"/>
-                                </variation>
-                                <connections>
-                                    <action selector="ShopButton:" destination="WZt-aV-po5" eventType="touchUpInside" id="Yew-oe-2dC"/>
-                                    <segue destination="alV-Yf-0Yo" kind="show" id="bkj-TB-smH"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ybb-yq-bdv">
                                 <rect key="frame" x="90" y="289" width="228" height="31"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
@@ -238,6 +226,18 @@
                                     <rect key="frame" x="251" y="231" width="74" height="25"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Um8-FO-ZBj">
+                                <rect key="frame" x="481" y="517" width="119" height="83"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Shop"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="225" y="501" width="94" height="58"/>
+                                </variation>
+                                <connections>
+                                    <action selector="ShopButton:" destination="WZt-aV-po5" eventType="touchUpInside" id="Nvk-Yd-8a1"/>
+                                    <segue destination="alV-Yf-0Yo" kind="show" id="1CX-K4-f7d"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -254,7 +254,6 @@
                                 <exclude reference="6zI-yI-KM5"/>
                                 <exclude reference="vaB-Df-gki"/>
                                 <exclude reference="XLZ-qL-zSq"/>
-                                <exclude reference="3Kd-ZX-kd0"/>
                                 <exclude reference="Ybb-yq-bdv"/>
                                 <exclude reference="Qh0-fX-Cje"/>
                                 <exclude reference="Lht-fq-fpY"/>
@@ -263,6 +262,7 @@
                                 <exclude reference="sBw-OL-j61"/>
                                 <exclude reference="2TM-bU-QW2"/>
                                 <exclude reference="91Y-Jb-44N"/>
+                                <exclude reference="Um8-FO-ZBj"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -279,7 +279,6 @@
                                 <include reference="6zI-yI-KM5"/>
                                 <include reference="vaB-Df-gki"/>
                                 <include reference="XLZ-qL-zSq"/>
-                                <include reference="3Kd-ZX-kd0"/>
                                 <include reference="Ybb-yq-bdv"/>
                                 <include reference="Qh0-fX-Cje"/>
                                 <include reference="Lht-fq-fpY"/>
@@ -288,6 +287,7 @@
                                 <include reference="sBw-OL-j61"/>
                                 <include reference="2TM-bU-QW2"/>
                                 <include reference="91Y-Jb-44N"/>
+                                <include reference="Um8-FO-ZBj"/>
                             </mask>
                         </variation>
                     </view>
@@ -309,37 +309,92 @@
         <!--Shop View Controller-->
         <scene sceneID="8G2-5h-XM7">
             <objects>
-                <viewController id="alV-Yf-0Yo" customClass="ShopViewController" customModule="Test1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShopViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="alV-Yf-0Yo" customClass="ShopViewController" customModule="Test1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="K3P-9s-Brs"/>
                         <viewControllerLayoutGuide type="bottom" id="MvE-az-BTY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="IjU-rr-D1w">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYc-KS-FZR">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Back"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="128" y="299" width="46" height="30"/>
+                                    <rect key="frame" x="0.0" y="497" width="81" height="65"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="WZt-aV-po5" kind="show" id="D82-nl-f1U"/>
+                                    <segue destination="WZt-aV-po5" kind="show" id="Ckx-2d-bvk"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shaqs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdC-3X-QQv">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="39" y="52" width="89" height="59"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kobes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lb5-qt-JyX">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="198" y="52" width="89" height="59"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHk-z3-WcE">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="39" y="127" width="89" height="59"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qem-BS-wVn">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="198" y="127" width="89" height="59"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="DYc-KS-FZR"/>
+                                <exclude reference="GdC-3X-QQv"/>
+                                <exclude reference="Lb5-qt-JyX"/>
+                                <exclude reference="aHk-z3-WcE"/>
+                                <exclude reference="Qem-BS-wVn"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="DYc-KS-FZR"/>
+                                <include reference="GdC-3X-QQv"/>
+                                <include reference="Lb5-qt-JyX"/>
+                                <include reference="aHk-z3-WcE"/>
+                                <include reference="Qem-BS-wVn"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="DaKobe" destination="Lb5-qt-JyX" id="T28-XR-pCA"/>
+                        <outlet property="DaKobeAmount" destination="Qem-BS-wVn" id="hHt-4I-3jt"/>
+                        <outlet property="DaKobes" destination="Lb5-qt-JyX" id="3Se-yh-haD"/>
+                        <outlet property="DaShaq" destination="GdC-3X-QQv" id="aCL-Zu-Z2h"/>
+                        <outlet property="DaShaqAmount" destination="aHk-z3-WcE" id="Zg8-tI-lbU"/>
+                        <outlet property="DaShaqs" destination="GdC-3X-QQv" id="IL9-GD-9Er"/>
+                        <outlet property="Shaqs" destination="GdC-3X-QQv" id="LDF-ra-xvF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eEP-ZE-JjW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
