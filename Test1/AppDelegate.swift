@@ -18,7 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         print(outputData())
-        let screensize = UIScreen.mainScreen().bounds.size.height
         // Iphone 6s plus height - 736.0
         // Iphone 6s plus width - 414.0
         // Iphone 6 plus height - 736.0
@@ -36,7 +35,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Iphone 4s height - 480.0
         // Iphone 4s width - 320.0
-        print(screensize)
         return true
     }
     
