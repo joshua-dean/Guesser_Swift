@@ -46,6 +46,9 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
         sLay.reloadData()  //refresh bar
         storeDouble("Level", value: userlevel)
         GuessTell.text = "1"
+        Arrows.image = UIImage(named: "blank")
+        imageView.image = UIImage(named:"Red_Circle")
+        TheNumber.text = ""
     }
     
     override func didReceiveMemoryWarning() {
