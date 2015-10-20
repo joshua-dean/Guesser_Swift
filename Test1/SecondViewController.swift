@@ -20,6 +20,7 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
     var userlevel = 0.0
     var shaqs = 0.0
     var kobes = 0.0
+    var filler = 0.0
     
     
     override func viewDidLoad() {
@@ -178,7 +179,9 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
             {
                 imageView.image = UIImage(named:"Green_Circle")
                 Arrows.image = UIImage(named: "blank")
-                shaqs += Double(calculateShaqs(guesses, level: Int(userlevel)))
+                filler = Double(calculateShaqs(guesses, level: Int(userlevel)))
+                shaqs += filler
+                SideLabel.text = "Got \(Int(filler)) Shaqs!"
                 storeDouble("Shaq", value: shaqs)
                 if guesses == 1
                 {
