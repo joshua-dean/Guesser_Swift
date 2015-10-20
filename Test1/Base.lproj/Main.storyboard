@@ -119,7 +119,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Back"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="647" width="102" height="91"/>
+                                    <rect key="frame" x="0.0" y="654" width="102" height="91"/>
                                 </variation>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="vH4-TY-Nb4"/>
@@ -154,7 +154,7 @@
                                 </variation>
                                 <connections>
                                     <action selector="ShopButton:" destination="mQ1-me-P1g" eventType="touchUpInside" id="CWm-P5-1El"/>
-                                    <segue destination="I0f-5M-Y2u" kind="show" id="bIM-xj-4XM"/>
+                                    <segue destination="fOM-8E-Goa" kind="show" id="ofM-jH-Bs5"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jX9-1k-pua">
@@ -409,51 +409,124 @@
             <point key="canvasLocation" x="329.25" y="1210.5"/>
         </scene>
         <!--Shop View Controller-->
-        <scene sceneID="4vt-1W-gFk">
+        <scene sceneID="las-Z2-xWZ">
             <objects>
-                <viewController id="I0f-5M-Y2u" customClass="ShopViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShopViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fOM-8E-Goa" customClass="ShopViewController" customModule="Test1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="63D-QG-P1d"/>
-                        <viewControllerLayoutGuide type="bottom" id="t9s-4k-FGZ"/>
+                        <viewControllerLayoutGuide type="top" id="HZ0-dw-0NK"/>
+                        <viewControllerLayoutGuide type="bottom" id="rd2-zc-CTX"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Udr-ee-TBN">
+                    <view key="view" contentMode="scaleToFill" id="cfK-lp-R6S">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJS-uq-Qa1">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmZ-us-Jus">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Back"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="609" width="95" height="38"/>
+                                    <rect key="frame" x="0.0" y="654" width="110" height="77"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="mQ1-me-P1g" kind="show" id="GQn-Oy-hgf"/>
+                                    <segue destination="mQ1-me-P1g" kind="show" id="M9F-HH-kdV"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ByZ-h7-Iek">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Buy Kobes"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="24" y="305" width="110" height="58"/>
+                                </variation>
+                                <connections>
+                                    <action selector="BuyDaKobe:" destination="fOM-8E-Goa" eventType="touchUpInside" id="aMA-xj-iWW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bm7-Ju-d6h">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="24" y="416" width="187" height="58"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shaqs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MW0-YJ-u7s">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="24" y="58" width="120" height="81"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nb-Og-isO">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="24" y="147" width="120" height="81"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kobes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTd-fn-b1t">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="191" y="58" width="120" height="81"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WcQ-I1-Ebo">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="191" y="147" width="120" height="81"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="IJS-uq-Qa1"/>
+                                <exclude reference="nmZ-us-Jus"/>
+                                <exclude reference="ByZ-h7-Iek"/>
+                                <exclude reference="bm7-Ju-d6h"/>
+                                <exclude reference="MW0-YJ-u7s"/>
+                                <exclude reference="3nb-Og-isO"/>
+                                <exclude reference="NTd-fn-b1t"/>
+                                <exclude reference="WcQ-I1-Ebo"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="IJS-uq-Qa1"/>
+                                <include reference="nmZ-us-Jus"/>
+                                <include reference="ByZ-h7-Iek"/>
+                                <include reference="bm7-Ju-d6h"/>
+                                <include reference="MW0-YJ-u7s"/>
+                                <include reference="3nb-Og-isO"/>
+                                <include reference="NTd-fn-b1t"/>
+                                <include reference="WcQ-I1-Ebo"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="BuyKobeAmount" destination="bm7-Ju-d6h" id="TXs-c8-xl0"/>
+                        <outlet property="DaKobeAmount" destination="WcQ-I1-Ebo" id="iuQ-L1-5KI"/>
+                        <outlet property="DaShaqAmount" destination="3nb-Og-isO" id="cRK-F0-tgA"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="82U-ev-gCs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Vw-z4-iXe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1022.25" y="1191.5"/>
+            <point key="canvasLocation" x="1062.75" y="1234.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="Title_Logo" width="822" height="243"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="GQn-Oy-hgf"/>
+        <segue reference="M9F-HH-kdV"/>
     </inferredMetricsTieBreakers>
 </document>

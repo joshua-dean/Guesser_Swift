@@ -59,7 +59,7 @@ func getAllDaLevels() -> Double
     if levelamount == -42.0
     {
         storeDouble("Level", value: 1)
-        levelamount = 0.0
+        levelamount = 1.0
     }
     return levelamount!
 }

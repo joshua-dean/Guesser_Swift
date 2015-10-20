@@ -315,6 +315,7 @@
                         <viewControllerLayoutGuide type="bottom" id="x4A-tR-x54"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="toh-wN-rCX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eer-l1-EiD">
