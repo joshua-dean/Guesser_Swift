@@ -24,17 +24,6 @@
                                     <rect key="frame" x="0.0" y="570" width="102" height="91"/>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJ3-jV-NOq">
-                                <rect key="frame" x="481" y="354" width="75" height="47"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="Enter"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="302" y="444" width="62" height="46"/>
-                                </variation>
-                                <connections>
-                                    <action selector="EnterDaNumber:" destination="mxs-fA-Zg0" eventType="touchUpInside" id="XNz-6i-P11"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fv0-ql-uRp">
                                 <rect key="frame" x="180" y="482" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
@@ -238,12 +227,22 @@
                                     <rect key="frame" x="296" y="226" width="74" height="25"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJ3-jV-NOq">
+                                <rect key="frame" x="481" y="354" width="75" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Enter"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="266" y="420" width="98" height="86"/>
+                                </variation>
+                                <connections>
+                                    <action selector="EnterDaNumber:" destination="mxs-fA-Zg0" eventType="touchUpInside" id="XNz-6i-P11"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="rtF-Sg-NhX"/>
-                                <exclude reference="LJ3-jV-NOq"/>
                                 <exclude reference="Fv0-ql-uRp"/>
                                 <exclude reference="obf-EE-Da2"/>
                                 <exclude reference="4Lf-i5-sLb"/>
@@ -263,12 +262,12 @@
                                 <exclude reference="vIY-Rl-BQ6"/>
                                 <exclude reference="jOW-3b-aN2"/>
                                 <exclude reference="WEq-jC-hUV"/>
+                                <exclude reference="LJ3-jV-NOq"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="rtF-Sg-NhX"/>
-                                <include reference="LJ3-jV-NOq"/>
                                 <include reference="Fv0-ql-uRp"/>
                                 <include reference="obf-EE-Da2"/>
                                 <include reference="4Lf-i5-sLb"/>
@@ -288,6 +287,7 @@
                                 <include reference="vIY-Rl-BQ6"/>
                                 <include reference="jOW-3b-aN2"/>
                                 <include reference="WEq-jC-hUV"/>
+                                <include reference="LJ3-jV-NOq"/>
                             </mask>
                         </variation>
                     </view>
