@@ -16,7 +16,7 @@
 import Foundation
 
 let defaults = NSUserDefaults.standardUserDefaults()
-let nolevel = -42.0
+let nolevel = -42.0 //returned if you try to retrieve a value that doesn't exist
 
 
 func storeDouble(name: String, value: Double)
@@ -31,7 +31,7 @@ func retrieveDouble(name: String) -> Double?
     {
         return potatoe.doubleValue
     }
-    return nolevel
+    return nolevel //returned if you try to retrieve a value that doesn't exist
 }
 
 
@@ -47,7 +47,7 @@ func retrieveBool(name: String) -> Bool?
     {
         return tempBool.boolValue
     }
-    return false
+    return false //returned if you try to retrieve a value that doesn't exist
 }
 
 
@@ -63,7 +63,7 @@ func retrieveString(name: String) -> String?
     {
         return tempString.string
     }
-    return ""
+    return "" //returned if you try to retrieve a value that doesn't exist
 }
 
 
@@ -84,7 +84,7 @@ func retrieveBoolArray(name: String) -> [Bool]?
     let tempRet: [NSString]
     tempRet = defaults.valueForKey(name)! as! [NSString] //force unwrap to type NSString
     var tempStore: [Bool]
-    tempStore = []
+    tempStore = [] //returned as blank if you try to retrieve a value that doesn't exist
     for i in 0...tempRet.count-1
     {
         tempStore.append(tempRet[i].boolValue)
