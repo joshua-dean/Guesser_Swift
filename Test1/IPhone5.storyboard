@@ -23,6 +23,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="497" width="81" height="65"/>
                                 </variation>
+                                <connections>
+                                    <action selector="BackTo:" destination="WZt-aV-po5" eventType="touchUpInside" id="6Yi-U6-379"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ug4-1x-PHb">
                                 <rect key="frame" x="481" y="354" width="75" height="47"/>

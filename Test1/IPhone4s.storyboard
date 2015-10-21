@@ -26,6 +26,9 @@
                                 <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="25" y="281" width="102" height="91"/>
                                 </variation>
+                                <connections>
+                                    <action selector="BackTo:" destination="z3Q-h8-ocj" eventType="touchUpInside" id="gap-Ti-l5t"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTz-Ez-iN9">
                                 <rect key="frame" x="180" y="482" width="46" height="30"/>

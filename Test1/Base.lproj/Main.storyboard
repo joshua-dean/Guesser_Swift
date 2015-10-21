@@ -9,7 +9,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Test1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Test1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -24,7 +24,7 @@
                                     <constraint firstAttribute="height" constant="56" id="ZUk-TT-OZf"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="Single Player"/>
+                                <state key="normal" title="Play"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="ZUk-TT-OZf"/>
@@ -122,6 +122,7 @@
                                     <rect key="frame" x="0.0" y="654" width="102" height="91"/>
                                 </variation>
                                 <connections>
+                                    <action selector="BackTo:" destination="mQ1-me-P1g" eventType="touchUpInside" id="PNE-EV-v63"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="vH4-TY-Nb4"/>
                                 </connections>
                             </button>
@@ -527,6 +528,6 @@
         <image name="Title_Logo" width="822" height="243"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="M9F-HH-kdV"/>
+        <segue reference="KQc-54-NZw"/>
     </inferredMetricsTieBreakers>
 </document>

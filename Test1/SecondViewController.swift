@@ -268,6 +268,10 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
         return cell
     }
     
+    @IBAction func BackTo(sender: AnyObject) {
+        let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("ViewController") as UIViewController
+        self.presentViewController(viewController, animated: false, completion: nil)
+    }
     
 
 }
