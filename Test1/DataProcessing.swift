@@ -25,3 +25,56 @@ func retrieveDouble(name: String) -> Double?
     }
     return nolevel
 }
+
+func storeBool(name: String, value: Bool)
+{
+    defaults.setValue(String(value), forKey: name)
+    defaults.synchronize()
+}
+
+func retrieveBool(name: String) -> Bool?
+{
+    if let tempBool = defaults.valueForKey(name)
+    {
+        return tempBool.boolValue
+    }
+    return false
+}
+
+func storeBoolArray(name: String, valArray: [Bool])
+{
+    var tempStore: [NSString]
+    tempStore = []
+    for i in 0...valArray.count-1
+    {
+        tempStore.append(String(valArray[i]))
+    }
+    defaults.setValue(tempStore, forKey: name)
+    defaults.synchronize()
+}
+
+func retrieveBoolArray(name: String) -> [Bool]?
+{
+    let tempRet: [NSString]
+    tempRet = defaults.valueForKey(name)! as! [NSString]
+    var tempStore: [Bool]
+    tempStore = []
+    for i in 0...tempRet.count-1
+    {
+        tempStore.append(tempRet[i].boolValue)
+    }
+    return tempStore
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
