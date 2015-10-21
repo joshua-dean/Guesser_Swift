@@ -4,20 +4,27 @@
 //
 //  Created by DEAN, JOSHUA on 9/18/15.
 //  Copyright © 2015 Josh. All rights reserved.
-//
+
+////////////////////////////////////////////////////////////////////////////////////////
+//                      Small 'library' for storing data                              //
+//                                                                                    //
+//  "store" functions store data with a string identifier                             //
+//  "retrieve" functions retrieve data with the string identifier it was stored as    //
+////////////////////////////////////////////////////////////////////////////////////////
+
 
 import Foundation
 
 let defaults = NSUserDefaults.standardUserDefaults()
 let nolevel = -42.0
 
-//Stores a double with a name identifier
+
 func storeDouble(name: String, value: Double)
 {
     defaults.setValue(String(value), forKey: name);
     defaults.synchronize()
 }
-//Retrieves a stored double, using the name it was stored as
+
 func retrieveDouble(name: String) -> Double?
 {
     if let potatoe = defaults.valueForKey(name)
@@ -26,13 +33,14 @@ func retrieveDouble(name: String) -> Double?
     }
     return nolevel
 }
-//Stores a boolean with a name identifier
+
+
 func storeBool(name: String, value: Bool)
 {
     defaults.setValue(String(value), forKey: name)
     defaults.synchronize()
 }
-//Retrieves a stored boolean, using the name it was stored as
+
 func retrieveBool(name: String) -> Bool?
 {
     if let tempBool = defaults.valueForKey(name)
@@ -41,7 +49,24 @@ func retrieveBool(name: String) -> Bool?
     }
     return false
 }
-//Stores a boolean array with a name identifier
+
+
+func storeString(name: String, value: String)
+{
+    defaults.setValue(value, forKey: name)
+    defaults.synchronize()
+}
+
+func retrieveString(name: String) -> String?
+{
+    if let tempString = defaults.valueForKey(name)
+    {
+        return tempString.string
+    }
+    return ""
+}
+
+
 func storeBoolArray(name: String, valArray: [Bool])
 {
     var tempStore: [NSString]
@@ -53,7 +78,7 @@ func storeBoolArray(name: String, valArray: [Bool])
     defaults.setValue(tempStore, forKey: name)
     defaults.synchronize()
 }
-//Retrieves a stored boolean array, using the name it was stored as
+
 func retrieveBoolArray(name: String) -> [Bool]?
 {
     let tempRet: [NSString]
