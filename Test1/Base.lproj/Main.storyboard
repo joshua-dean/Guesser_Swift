@@ -418,7 +418,7 @@
                         <viewControllerLayoutGuide type="bottom" id="rd2-zc-CTX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cfK-lp-R6S">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmZ-us-Jus">

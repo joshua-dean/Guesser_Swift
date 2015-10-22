@@ -6,18 +6,26 @@
 //  Copyright © 2015 Josh. All rights reserved.
 
 ////////////////////////////////////////////////////////////////////////////////////////
-//                      Small 'library' for storing data                              //
+//                        Small 'library' for storing data                            //
 //                                                                                    //
-//  "store" functions store data with a string identifier                             //
-//  "retrieve" functions retrieve data with the string identifier it was stored as    //
+//  Store Functions    -> Store Data using String identifier, usually called 'name'   //
+//  Retrieve Functions -> Retrieve data using previously declared String identifier   //
+//  Invalid Values     -> Values Returned if no value was stored, change these to     //
+//                      > set a 'default' value for data types                        //
+//  Currently Supported-> Double, String, Bool, [String], [Bool]                      //
+//                                                                                    //
 ////////////////////////////////////////////////////////////////////////////////////////
 
 
 import Foundation
 
 let defaults = NSUserDefaults.standardUserDefaults()
-let nolevel = -42.0 //returned if you try to retrieve a value that doesn't exist
 
+//Invalid Values
+let invDouble = -42.0
+let invString = ""
+let invBool   = false
+let invArray  = []
 
 func storeDouble(name: String, value: Double)
 {
@@ -31,7 +39,7 @@ func retrieveDouble(name: String) -> Double?
     {
         return potatoe.doubleValue
     }
-    return nolevel //returned if you try to retrieve a value that doesn't exist
+    return invDouble //returned if you try to retrieve a value that doesn't exist
 }
 
 
@@ -47,7 +55,7 @@ func retrieveBool(name: String) -> Bool?
     {
         return tempBool.boolValue
     }
-    return false //returned if you try to retrieve a value that doesn't exist
+    return invBool //returned if you try to retrieve a value that doesn't exist
 }
 
 
@@ -63,34 +71,35 @@ func retrieveString(name: String) -> String?
     {
         return tempString.string
     }
-    return "" //returned if you try to retrieve a value that doesn't exist
+    return invString //returned if you try to retrieve a value that doesn't exist
 }
-
 
 func storeBoolArray(name: String, valArray: [Bool])
 {
-    var tempStore: [NSString]
-    tempStore = []
-    for i in 0...valArray.count-1
-    {
-        tempStore.append(String(valArray[i]))
-    }
-    defaults.setValue(tempStore, forKey: name)
+    defaults.setValue(valArray, forKey: name)
     defaults.synchronize()
 }
-
-func retrieveBoolArray(name: String) -> [Bool]?
+func retrieveBoolArray(name: String) -> [Bool]
 {
-    let tempRet: [NSString]
-    tempRet = defaults.valueForKey(name)! as! [NSString] //force unwrap to type NSString
-    var tempStore: [Bool]
-    tempStore = [] //returned as blank if you try to retrieve a value that doesn't exist
-    for i in 0...tempRet.count-1
-    {
-        tempStore.append(tempRet[i].boolValue)
-    }
-    return tempStore
+    if let temp = defaults.valueForKey(name) as? [Bool]
+    {return temp}
+    return invArray as! [Bool] //blank array returned if not valid
 }
+
+func storeStringArray(name: String, valArray: [String])
+{
+    defaults.setValue(valArray, forKey: name)
+    defaults.synchronize()
+}
+func retrieveStringArray(name: String) -> [String]
+{
+    if let temp = defaults.valueForKey(name) as? [String]
+    {return temp}
+    return invArray as! [String] //blank array returned if not valid
+}
+
+
+
 
 
 
