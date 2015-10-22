@@ -75,6 +75,12 @@ func getAllDaKobes() -> Double
     return kobeamount!
 }
 
+func storeEverything(shaqs: Double, kobes: Double, level: Double)
+{
+    storeDouble("Shaq", value: shaqs)
+    storeDouble("Kobe", value: kobes)
+    storeDouble("Level", value: level)
+}
 
 
 

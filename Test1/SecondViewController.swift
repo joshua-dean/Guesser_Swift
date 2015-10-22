@@ -97,7 +97,6 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
         TheNumber.text = numberlabel
     }
     
-    
     @IBAction func Add3(sender: AnyObject) {
         if guesses == 0
         {

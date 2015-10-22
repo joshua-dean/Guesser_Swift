@@ -126,17 +126,6 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="vH4-TY-Nb4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxL-ga-BQO">
-                                <rect key="frame" x="481" y="354" width="75" height="47"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="Enter"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="297" y="499" width="110" height="76"/>
-                                </variation>
-                                <connections>
-                                    <action selector="EnterDaNumber:" destination="mQ1-me-P1g" eventType="touchUpInside" id="mJw-NN-lc4"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EuS-V1-VGi">
                                 <rect key="frame" x="154" y="527" width="285" height="73"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -340,12 +329,22 @@
                                     <rect key="frame" x="283" y="258" width="74" height="25"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxL-ga-BQO">
+                                <rect key="frame" x="481" y="354" width="75" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Enter"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="278" y="478" width="135" height="97"/>
+                                </variation>
+                                <connections>
+                                    <action selector="EnterDaNumber:" destination="mQ1-me-P1g" eventType="touchUpInside" id="mJw-NN-lc4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="jZj-FF-GHl"/>
-                                <exclude reference="yxL-ga-BQO"/>
                                 <exclude reference="EuS-V1-VGi"/>
                                 <exclude reference="S8O-af-3G6"/>
                                 <exclude reference="jX9-1k-pua"/>
@@ -365,12 +364,12 @@
                                 <exclude reference="Ufi-XK-Jne"/>
                                 <exclude reference="3hT-ob-ho5"/>
                                 <exclude reference="gLA-nH-dPp"/>
+                                <exclude reference="yxL-ga-BQO"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="jZj-FF-GHl"/>
-                                <include reference="yxL-ga-BQO"/>
                                 <include reference="EuS-V1-VGi"/>
                                 <include reference="S8O-af-3G6"/>
                                 <include reference="jX9-1k-pua"/>
@@ -390,6 +389,7 @@
                                 <include reference="Ufi-XK-Jne"/>
                                 <include reference="3hT-ob-ho5"/>
                                 <include reference="gLA-nH-dPp"/>
+                                <include reference="yxL-ga-BQO"/>
                             </mask>
                         </variation>
                     </view>
@@ -418,7 +418,7 @@
                         <viewControllerLayoutGuide type="bottom" id="rd2-zc-CTX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cfK-lp-R6S">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmZ-us-Jus">
