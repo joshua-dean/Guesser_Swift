@@ -82,6 +82,29 @@ func storeEverything(shaqs: Double, kobes: Double, level: Double)
     storeDouble("Level", value: level)
 }
 
+func getStatsArrays() -> [Double]
+{
+    var statarray = retrieveDoubleArray("Stats")
+    if statarray.count == 0
+    {
+        let temparray = [Double](count: 100, repeatedValue: 0.0)
+        storeDoubleArray("Stats", valArray: temparray)
+        statarray = temparray
+    }
+    return statarray
+}
+
+func getAcheiveArrays() -> [String]
+{
+    var statarray = retrieveStringArray("Achievements")
+    if statarray.count == 0
+    {
+        let temparray = [String](count: 100, repeatedValue: "")
+        storeStringArray("Achievements", valArray: temparray)
+        statarray = temparray
+    }
+    return statarray
+}
 
 
 
