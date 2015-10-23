@@ -13,7 +13,7 @@
 //  Invalid Values     -> Values Returned if no value was stored, change these to     //
 //                     -  set a 'default' value for data types                        //
 //  Currently Supported-> Double, String, Bool, [String], [Bool], [Double]            //
-//                     -  AnyObject                                                   //
+//                     -  AnyObject, [AnyObject]                                      //
 //  AnyObject Methods  -> AnyObject can be used with Any Object, but requires forced  //
 //                     -  casting from the return method                              //
 //                     -  The other methods still exist to allow custom returns for   //
@@ -142,9 +142,11 @@ func storeObjectArray(name: String, valArray: [AnyObject])
     defaults.synchronize()
 }
 
-func retrieveObjectArray()
+func retrieveObjectArray(name: String) -> [AnyObject]
 {
-    
+    if let temp = defaults.valueForKey(name) as? [AnyObject]
+    {return temp}
+    return invArray as [AnyObject]
 }
 
 
