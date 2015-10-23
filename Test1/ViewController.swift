@@ -17,11 +17,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        /*
         var potatoe = "cheese"
         storeObject("potatoe", value: potatoe)
         potatoe = "bacon"
         potatoe = retrieveObject("potatoe") as! String
         print(potatoe)
+*/
     }
 
     override func didReceiveMemoryWarning() {
