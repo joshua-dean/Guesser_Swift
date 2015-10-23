@@ -12,7 +12,7 @@
 //  Retrieve Functions -> Retrieve data using previously declared String identifier   //
 //  Invalid Values     -> Values Returned if no value was stored, change these to     //
 //                      > set a 'default' value for data types                        //
-//  Currently Supported-> Double, String, Bool, [String], [Bool]                      //
+//  Currently Supported-> Double, String, Bool, [String], [Bool], [Double]            //
 //                                                                                    //
 ////////////////////////////////////////////////////////////////////////////////////////
 
@@ -97,6 +97,19 @@ func retrieveStringArray(name: String) -> [String]
     {return temp}
     return invArray as! [String] //blank array returned if not valid
 }
+
+func storeDoubleArray(name: String, valArray: [Double])
+{
+    defaults.setValue(valArray, forKey: name)
+    defaults.synchronize()
+}
+func retrieveDoubleArray(name: String) -> [Double]
+{
+    if let temp = defaults.valueForKey(name) as? [Double]
+    {return temp}
+    return invArray as! [Double] //blank array returned if not valid
+}
+
 
 
 
