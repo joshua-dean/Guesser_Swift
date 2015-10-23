@@ -75,11 +75,13 @@ func getAllDaKobes() -> Double
     return kobeamount!
 }
 
-func storeEverything(shaqs: Double, kobes: Double, level: Double)
+func storeEverything(shaqs: Double, kobes: Double, level: Double, statarray: [Double], achievementsarray: [String])
 {
     storeDouble("Shaq", value: shaqs)
     storeDouble("Kobe", value: kobes)
     storeDouble("Level", value: level)
+    storeDoubleArray("Stats", valArray: statarray)
+    storeStringArray("Achievements", valArray: achievementsarray)
 }
 
 func getStatsArrays() -> [Double]
@@ -99,7 +101,7 @@ func getAcheiveArrays() -> [String]
     var statarray = retrieveStringArray("Achievements")
     if statarray.count == 0
     {
-        let temparray = [String](count: 100, repeatedValue: "")
+        let temparray = [String](count: 1000, repeatedValue: "")
         storeStringArray("Achievements", valArray: temparray)
         statarray = temparray
     }

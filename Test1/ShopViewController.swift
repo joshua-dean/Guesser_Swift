@@ -13,6 +13,8 @@ class ShopViewController: UIViewController {
     var theshaqs = 0
     var thekobes = 0
     var randomnumber = 0
+    var daStats = [Double](count: 100, repeatedValue: 0.0)
+    var daChieves = [String](count: 1000, repeatedValue: "")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +22,8 @@ class ShopViewController: UIViewController {
         thekobes = Int(getAllDaKobes())
         DaShaqAmount.text = String(theshaqs)
         DaKobeAmount.text = String(thekobes)
+        daStats = getStatsArrays()
+        daChieves = getAcheiveArrays()
     }
     
     override func didReceiveMemoryWarning() {
@@ -34,6 +38,8 @@ class ShopViewController: UIViewController {
     @IBAction func BuyDaKobe(sender: AnyObject) {
         if theshaqs > 999
         {
+            daStats[4]++
+            storeDoubleArray("Stats", valArray: daStats)
             theshaqs -= 1000
             randomnumber = Int(arc4random_uniform(1000))
             randomnumber++

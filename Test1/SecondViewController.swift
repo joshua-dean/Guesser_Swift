@@ -21,6 +21,8 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
     var shaqs = 0.0
     var kobes = 0.0
     var filler = 0.0
+    var daStats = [Double](count: 100, repeatedValue: 0.0)
+    var daChieves = [String](count: 1000, repeatedValue: "")
     
     
     override func viewDidLoad() {
@@ -49,6 +51,8 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
         Arrows.image = UIImage(named: "blank")
         imageView.image = UIImage(named:"Red_Circle")
         TheNumber.text = ""
+        daStats = getStatsArrays()
+        daChieves = getAcheiveArrays()
     }
     
     override func didReceiveMemoryWarning() {
@@ -172,6 +176,8 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
     @IBAction func EnterDaNumber(sender: AnyObject) {
         if numberlabel != ""
         {
+            daStats[0]++
+            storeDoubleArray("Stats", valArray: daStats)
             numberguessed = Int(numberlabel)!
             guesses++
             adjustlabel = calculateGuess(secretnumber, guessnumber: numberguessed)
@@ -179,12 +185,16 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
             numberlabel = ""
             if adjustlabel == "Correct!"
             {
+                daStats[1]++
+                storeDoubleArray("Stats", valArray: daStats)
                 imageView.image = UIImage(named:"Green_Circle")
                 Arrows.image = UIImage(named: "blank")
                 filler = Double(calculateShaqs(guesses, level: Int(userlevel)))
                 shaqs += filler
                 SideLabel.text = "Got \(Int(filler)) Shaqs!"
                 storeDouble("Shaq", value: shaqs)
+                daStats[2] += filler
+                storeDoubleArray("Stats", valArray: daStats)
                 if guesses == 1
                 {
                     SideLabel.text = "Level Up!"
