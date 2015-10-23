@@ -11,8 +11,13 @@
 //  Store Functions    -> Store Data using String identifier, usually called 'name'   //
 //  Retrieve Functions -> Retrieve data using previously declared String identifier   //
 //  Invalid Values     -> Values Returned if no value was stored, change these to     //
-//                      > set a 'default' value for data types                        //
+//                     -  set a 'default' value for data types                        //
 //  Currently Supported-> Double, String, Bool, [String], [Bool], [Double]            //
+//                     -  AnyObject                                                   //
+//  AnyObject Methods  -> AnyObject can be used with Any Object, but requires forced  //
+//                     -  casting from the return method                              //
+//                     -  The other methods still exist to allow custom returns for   //
+//                     -  invalid values                                              //
 //                                                                                    //
 ////////////////////////////////////////////////////////////////////////////////////////
 
@@ -26,6 +31,24 @@ let invDouble = -42.0
 let invString = ""
 let invBool   = false
 let invArray  = []
+let invObject = 0
+
+
+func storeObject(name: String, value: AnyObject)
+{
+    defaults.setValue(value, forKey: name)
+    defaults.synchronize()
+}
+
+func retrieveObject(name: String) -> AnyObject
+{
+    if let temp = defaults.valueForKey(name)
+    {
+        return temp
+    }
+    return invObject
+}
+
 
 func storeDouble(name: String, value: Double)
 {
@@ -35,9 +58,9 @@ func storeDouble(name: String, value: Double)
 
 func retrieveDouble(name: String) -> Double?
 {
-    if let potatoe = defaults.valueForKey(name)
+    if let temp = defaults.valueForKey(name)
     {
-        return potatoe.doubleValue
+        return temp.doubleValue
     }
     return invDouble //returned if you try to retrieve a value that doesn't exist
 }
@@ -76,8 +99,9 @@ func retrieveString(name: String) -> String?
 
 func storeBoolArray(name: String, valArray: [Bool])
 {
-    defaults.setValue(valArray, forKey: name)
-    defaults.synchronize()
+    storeObjectArray(name, valArray: valArray)
+    //defaults.setValue(valArray, forKey: name)
+    //defaults.synchronize()
 }
 func retrieveBoolArray(name: String) -> [Bool]
 {
@@ -88,8 +112,9 @@ func retrieveBoolArray(name: String) -> [Bool]
 
 func storeStringArray(name: String, valArray: [String])
 {
-    defaults.setValue(valArray, forKey: name)
-    defaults.synchronize()
+    storeObjectArray(name, valArray: valArray)
+    //defaults.setValue(valArray, forKey: name)
+    //defaults.synchronize()
 }
 func retrieveStringArray(name: String) -> [String]
 {
@@ -100,8 +125,9 @@ func retrieveStringArray(name: String) -> [String]
 
 func storeDoubleArray(name: String, valArray: [Double])
 {
-    defaults.setValue(valArray, forKey: name)
-    defaults.synchronize()
+    storeObjectArray(name, valArray: valArray)
+    //defaults.setValue(valArray, forKey: name)
+    //defaults.synchronize()
 }
 func retrieveDoubleArray(name: String) -> [Double]
 {
@@ -110,6 +136,16 @@ func retrieveDoubleArray(name: String) -> [Double]
     return invArray as! [Double] //blank array returned if not valid
 }
 
+func storeObjectArray(name: String, valArray: [AnyObject])
+{
+    defaults.setValue(valArray, forKey: name)
+    defaults.synchronize()
+}
+
+func retrieveObjectArray()
+{
+    
+}
 
 
 
