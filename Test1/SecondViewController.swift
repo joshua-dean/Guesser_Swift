@@ -178,6 +178,28 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
         {
             daStats[0]++
             storeDoubleArray("Stats", valArray: daStats)
+            if daChieves[1] == "No"
+            {
+                if daStats[0] > 99
+                {
+                    daChieves[1] = "Yes"
+                    storeStringArray("Achievements", valArray: daChieves)
+                }
+            }
+            if daChieves[3] == "No"
+            {
+                if daStats[0] > 499
+                {
+                    daChieves[3] = "Yes"
+                }
+            }
+            if daChieves[5] == "No"
+            {
+                if daStats[0] > 999
+                {
+                    daChieves[5] = "Yes"
+                }
+            }
             numberguessed = Int(numberlabel)!
             guesses++
             adjustlabel = calculateGuess(secretnumber, guessnumber: numberguessed)

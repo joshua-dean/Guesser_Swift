@@ -22,6 +22,7 @@
 		5BEB2D161BBD873900757E5F /* IPhone5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BEB2D151BBD873900757E5F /* IPhone5.storyboard */; };
 		5BEB2D181BBD890800757E5F /* IPhone6.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BEB2D171BBD890800757E5F /* IPhone6.storyboard */; };
 		6072CD101BACB74900DF940E /* ShaqsNKobes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5A7C4D1BAC675A005BCA8F /* ShaqsNKobes.swift */; };
+		609D40721BDC79E4009F68FB /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609D40711BDC79E4009F68FB /* StatsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		5BDA5D771BB9CB21007193D1 /* IPhone4s.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = IPhone4s.storyboard; sourceTree = "<group>"; };
 		5BEB2D151BBD873900757E5F /* IPhone5.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = IPhone5.storyboard; sourceTree = "<group>"; };
 		5BEB2D171BBD890800757E5F /* IPhone6.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = IPhone6.storyboard; sourceTree = "<group>"; };
+		609D40711BDC79E4009F68FB /* StatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				331C79611BAC65F4005CEF7A /* DataProcessing.swift */,
 				334853F51BB05EE90092A086 /* ShopViewController.swift */,
 				5BEB2D151BBD873900757E5F /* IPhone5.storyboard */,
+				609D40711BDC79E4009F68FB /* StatsViewController.swift */,
 			);
 			path = Test1;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				5B6BFDAA1BAB1A820013811D /* SecondViewController.swift in Sources */,
 				334853F61BB05EE90092A086 /* ShopViewController.swift in Sources */,
 				3390ACCE1BA9C33E00A0A5A3 /* ViewController.swift in Sources */,
+				609D40721BDC79E4009F68FB /* StatsViewController.swift in Sources */,
 				331C79621BAC65F4005CEF7A /* DataProcessing.swift in Sources */,
 				3390ACCC1BA9C33E00A0A5A3 /* AppDelegate.swift in Sources */,
 			);

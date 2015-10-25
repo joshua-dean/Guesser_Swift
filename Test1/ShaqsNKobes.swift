@@ -101,11 +101,47 @@ func getAcheiveArrays() -> [String]
     var statarray = retrieveStringArray("Achievements")
     if statarray.count == 0
     {
-        let temparray = [String](count: 1000, repeatedValue: "")
+        let temparray = daOriginalAchieveArray()
         storeStringArray("Achievements", valArray: temparray)
         statarray = temparray
     }
     return statarray
+}
+
+func getStatNameArray() -> [String]
+{
+    var namearray = retrieveStringArray("StatNames")
+    if namearray.count == 0
+    {
+        let temparray = [String](count: 100, repeatedValue: "")
+        storeStringArray("StatNames", valArray: temparray)
+        namearray = temparray
+    }
+    return namearray
+}
+
+func daOriginalAchieveArray() -> [String]
+{
+    var temparray = [String](count: 1000, repeatedValue: "")
+    temparray[0] = "Guess 100 times"
+    temparray[2] = "Guess 500 times"
+    temparray[4] = "Guess 1k   times"
+    var i: Int
+    for i = 1; i < 6; i = i+2{
+        temparray[i] = "No"
+    }
+    return temparray
+}
+
+func daStatNameArray() -> [String]
+{
+    var temparray = [String](count: 100, repeatedValue: "")
+    temparray[0] = "Total Guesses"
+    temparray[1] = "Total Correct Guesses"
+    temparray[2] = "Total Shaqs Earned"
+    temparray[3] = "Time Played(Minutes)"
+    temparray[3] = "# of times Kobe’s were bought"
+    return temparray
 }
 
 
