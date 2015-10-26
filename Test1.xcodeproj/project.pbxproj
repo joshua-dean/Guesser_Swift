@@ -45,7 +45,7 @@
 /* Begin PBXFileReference section */
 		331C79611BAC65F4005CEF7A /* DataProcessing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProcessing.swift; sourceTree = "<group>"; };
 		334853F51BB05EE90092A086 /* ShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
-		3390ACC81BA9C33E00A0A5A3 /* Test1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3390ACC81BA9C33E00A0A5A3 /* Guesser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guesser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3390ACCB1BA9C33E00A0A5A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3390ACCD1BA9C33E00A0A5A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3390ACD01BA9C33E00A0A5A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 		3390ACC91BA9C33E00A0A5A3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3390ACC81BA9C33E00A0A5A3 /* Test1.app */,
+				3390ACC81BA9C33E00A0A5A3 /* Guesser.app */,
 				3390ACDC1BA9C33E00A0A5A3 /* Test1Tests.xctest */,
 				3390ACE71BA9C33E00A0A5A3 /* Test1UITests.xctest */,
 			);
@@ -169,7 +169,7 @@
 			);
 			name = Test1;
 			productName = Test1;
-			productReference = 3390ACC81BA9C33E00A0A5A3 /* Test1.app */;
+			productReference = 3390ACC81BA9C33E00A0A5A3 /* Guesser.app */;
 			productType = "com.apple.product-type.application";
 		};
 		3390ACDB1BA9C33E00A0A5A3 /* Test1Tests */ = {
@@ -438,7 +438,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.CJDW.Test1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Guesser;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -451,7 +451,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.CJDW.Test1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Guesser;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
