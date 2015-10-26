@@ -22,7 +22,7 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
     var kobes = 0.0
     var filler = 0.0
     var daStats = [Double](count: 100, repeatedValue: 0.0)
-    var daChieves = [String](count: 1000, repeatedValue: "")
+    var daChieves: [[String]] = []
     
     
     override func viewDidLoad() {
@@ -178,26 +178,28 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
         {
             daStats[0]++
             storeDoubleArray("Stats", valArray: daStats)
-            if daChieves[1] == "No"
+            if daChieves[0][1] == "No"
             {
                 if daStats[0] > 99
                 {
-                    daChieves[1] = "Yes"
-                    storeStringArray("Achievements", valArray: daChieves)
+                    daChieves[0][1] = "Yes"
+                    storeObjectArray("Achievements", valArray: daChieves)
                 }
             }
-            if daChieves[3] == "No"
+            if daChieves[1][1] == "No"
             {
                 if daStats[0] > 499
                 {
-                    daChieves[3] = "Yes"
+                    daChieves[1][1] = "Yes"
+                    storeObjectArray("Achievements", valArray: daChieves)
                 }
             }
-            if daChieves[5] == "No"
+            if daChieves[2][1] == "No"
             {
                 if daStats[0] > 999
                 {
-                    daChieves[5] = "Yes"
+                    daChieves[2][1] = "Yes"
+                    storeObjectArray("Achievements", valArray: daChieves)
                 }
             }
             numberguessed = Int(numberlabel)!

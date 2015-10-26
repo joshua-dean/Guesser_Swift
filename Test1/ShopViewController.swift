@@ -14,7 +14,7 @@ class ShopViewController: UIViewController {
     var thekobes = 0
     var randomnumber = 0
     var daStats = [Double](count: 100, repeatedValue: 0.0)
-    var daChieves = [String](count: 1000, repeatedValue: "")
+    var daChieves: [[String]] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
