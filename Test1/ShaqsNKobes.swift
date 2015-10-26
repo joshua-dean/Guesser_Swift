@@ -144,7 +144,7 @@ func daStatNameArray() -> [String]
     temparray[1] = "Total Correct Guesses"
     temparray[2] = "Total Shaqs Earned"
     temparray[3] = "Time Played(Minutes)"
-    temparray[3] = "# of times Kobe’s were bought"
+    temparray[4] = "# of times Kobe’s were bought"
     return temparray
 }
 
