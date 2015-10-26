@@ -14,7 +14,7 @@ class StatsViewController: UIViewController {
     
     var daStats: [Double] = []
     var daStatNames: [String] = []
-    var daChieves: [String] = []
+    var daChieves: [[String]] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
