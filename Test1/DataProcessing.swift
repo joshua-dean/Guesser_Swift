@@ -142,7 +142,7 @@ func storeObjectArray(name: String, valArray: [AnyObject])
     defaults.synchronize()
 }
 
-func retrieveObjectArray(name: String) -> [AnyObject]
+func retrieveObjectArray(name: String) -> [AnyObject] //must force unwrap when retrieving
 {
     if let temp = defaults.valueForKey(name) as? [AnyObject]
     {return temp}
