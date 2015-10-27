@@ -7,7 +7,7 @@
         <!--Second View Controller-->
         <scene sceneID="D9U-ko-Z3B">
             <objects>
-                <viewController storyboardIdentifier="SecondViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WZt-aV-po5" customClass="SecondViewController" customModule="Test1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WZt-aV-po5" customClass="SecondViewController" customModule="Guesser" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SOw-jS-fIk"/>
                         <viewControllerLayoutGuide type="bottom" id="88B-7R-neW"/>
@@ -312,7 +312,7 @@
         <!--Shop View Controller-->
         <scene sceneID="eGy-Uo-qXH">
             <objects>
-                <viewController id="KGo-dp-Mr4" customClass="ShopViewController" customModule="Test1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KGo-dp-Mr4" customClass="ShopViewController" customModule="Guesser" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wMd-bN-B7e"/>
                         <viewControllerLayoutGuide type="bottom" id="i8T-x3-mMU"/>

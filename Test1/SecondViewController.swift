@@ -241,6 +241,8 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
             {
                 imageView.image = UIImage(named:"Red_Circle")
             }
+            daStats[6] = ((daStats[1] / daStats[0]) * 100)
+            storeDoubleArray("Stats", valArray: daStats)
         }
         //Arrow and ProgressBar logic
         let guess = Double(numberguessed)

@@ -17,7 +17,7 @@ class StatsViewController: UIViewController {
     var daChieves: [[String]] = []
     var arraylocvalue = 0
     let LOWEST_ARRAY_LOCATION = 0
-    let HIGHEST_ARRAY_LOCATION = 2
+    let HIGHEST_ARRAY_LOCATION = 5
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,10 +82,10 @@ class StatsViewController: UIViewController {
         Stat4.text = daStatNames[3 + arraylocvalue]
         Stat5.text = daStatNames[4 + arraylocvalue]
         
-        Value1.text = ((daStats[0 + arraylocvalue] % 1 == 0) ? String(Int(daStats[0 + arraylocvalue])) : String(daStats[0 + arraylocvalue]))
-        Value2.text = ((daStats[1 + arraylocvalue] % 1 == 0) ? String(Int(daStats[1 + arraylocvalue])) : String(daStats[1 + arraylocvalue]))
-        Value3.text = ((daStats[2 + arraylocvalue] % 1 == 0) ? String(Int(daStats[2 + arraylocvalue])) : String(daStats[2 + arraylocvalue]))
-        Value4.text = ((daStats[3 + arraylocvalue] % 1 == 0) ? String(Int(daStats[3 + arraylocvalue])) : String(daStats[3 + arraylocvalue]))
-        Value5.text = ((daStats[4 + arraylocvalue] % 1 == 0) ? String(Int(daStats[4 + arraylocvalue])) : String(daStats[4 + arraylocvalue]))
+        Value1.text = ((daStats[0 + arraylocvalue] % 1 == 0) ? String(Int(daStats[0 + arraylocvalue])) : String(round(1000 * daStats[0 + arraylocvalue]) / 1000))
+        Value2.text = ((daStats[1 + arraylocvalue] % 1 == 0) ? String(Int(daStats[1 + arraylocvalue])) : String(round(1000 * daStats[1 + arraylocvalue]) / 1000))
+        Value3.text = ((daStats[2 + arraylocvalue] % 1 == 0) ? String(Int(daStats[2 + arraylocvalue])) : String(round(1000 * daStats[2 + arraylocvalue]) / 1000))
+        Value4.text = ((daStats[3 + arraylocvalue] % 1 == 0) ? String(Int(daStats[3 + arraylocvalue])) : String(round(1000 * daStats[3 + arraylocvalue]) / 1000))
+        Value5.text = ((daStats[4 + arraylocvalue] % 1 == 0) ? String(Int(daStats[4 + arraylocvalue])) : String(round(1000 * daStats[4 + arraylocvalue]) / 1000))
     }
 }
