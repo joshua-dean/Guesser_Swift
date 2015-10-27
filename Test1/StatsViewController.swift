@@ -33,13 +33,14 @@ class StatsViewController: UIViewController {
         daStatNames = getStatNameArray()
         daChieves = getAcheiveArrays()
         updateText()
-        _ = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "addTime", userInfo: nil, repeats: true)
+        _ = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "addTime", userInfo: nil, repeats: true) // calls addTime() every second
     }
     
     func addTime()
     {
         daStats[3] += 1
         storeDoubleArray("Stats", valArray: daStats)
+        updateText()
     }
     
     override func didReceiveMemoryWarning() {
@@ -85,7 +86,19 @@ class StatsViewController: UIViewController {
         Value1.text = ((daStats[0 + arraylocvalue] % 1 == 0) ? String(Int(daStats[0 + arraylocvalue])) : String(round(1000 * daStats[0 + arraylocvalue]) / 1000))
         Value2.text = ((daStats[1 + arraylocvalue] % 1 == 0) ? String(Int(daStats[1 + arraylocvalue])) : String(round(1000 * daStats[1 + arraylocvalue]) / 1000))
         Value3.text = ((daStats[2 + arraylocvalue] % 1 == 0) ? String(Int(daStats[2 + arraylocvalue])) : String(round(1000 * daStats[2 + arraylocvalue]) / 1000))
-        Value4.text = ((daStats[3 + arraylocvalue] % 1 == 0) ? String(Int(daStats[3 + arraylocvalue])) : String(round(1000 * daStats[3 + arraylocvalue]) / 1000))
+        if(arraylocvalue != 0)
+        {
+            Value4.text = ((daStats[3 + arraylocvalue] % 1 == 0) ? String(Int(daStats[3 + arraylocvalue])) : String(round(1000 * daStats[3 + arraylocvalue]) / 1000))
+        }
+        else
+        {
+            var temp = String(Int(daStats[3] % 60))
+            if temp.characters.count == 1
+            {
+                temp = "0" + temp
+            }
+            Value4.text = String(Int(daStats[3] / 60)) + ":" + temp
+        }
         Value5.text = ((daStats[4 + arraylocvalue] % 1 == 0) ? String(Int(daStats[4 + arraylocvalue])) : String(round(1000 * daStats[4 + arraylocvalue]) / 1000))
     }
 }
