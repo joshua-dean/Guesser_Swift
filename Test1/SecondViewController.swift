@@ -53,6 +53,13 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
         TheNumber.text = ""
         daStats = getStatsArrays()
         daChieves = getAcheiveArrays()
+        _ = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "addTime", userInfo: nil, repeats: true)
+    }
+    
+    func addTime()
+    {
+        daStats[3] += 1
+        storeDoubleArray("Stats", valArray: daStats)
     }
     
     override func didReceiveMemoryWarning() {
@@ -234,6 +241,8 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
             {
                 imageView.image = UIImage(named:"Red_Circle")
             }
+            daStats[6] = ((daStats[1] / daStats[0]) * 100)
+            storeDoubleArray("Stats", valArray: daStats)
         }
         //Arrow and ProgressBar logic
         let guess = Double(numberguessed)

@@ -24,6 +24,13 @@ class ShopViewController: UIViewController {
         DaKobeAmount.text = String(thekobes)
         daStats = getStatsArrays()
         daChieves = getAcheiveArrays()
+        _ = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "addTime", userInfo: nil, repeats: true)
+    }
+    
+    func addTime()
+    {
+        daStats[3] += 1
+        storeDoubleArray("Stats", valArray: daStats)
     }
     
     override func didReceiveMemoryWarning() {
@@ -39,7 +46,6 @@ class ShopViewController: UIViewController {
         if theshaqs > 999
         {
             daStats[4]++
-            storeDoubleArray("Stats", valArray: daStats)
             theshaqs -= 1000
             randomnumber = Int(arc4random_uniform(1000))
             randomnumber++
@@ -51,6 +57,8 @@ class ShopViewController: UIViewController {
             thekobes = Int(getAllDaKobes())
             DaShaqAmount.text = String(theshaqs)
             DaKobeAmount.text = String(thekobes)
+            daStats[5] = (daStats[4] / getAllDaKobes())
+            storeDoubleArray("Stats", valArray: daStats)
         }
         else
         {

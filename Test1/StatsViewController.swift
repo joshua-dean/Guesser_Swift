@@ -17,7 +17,7 @@ class StatsViewController: UIViewController {
     var daChieves: [[String]] = []
     var arraylocvalue = 0
     let LOWEST_ARRAY_LOCATION = 0
-    let HIGHEST_ARRAY_LOCATION = 2
+    let HIGHEST_ARRAY_LOCATION = 5
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +32,14 @@ class StatsViewController: UIViewController {
         daStats = getStatsArrays()
         daStatNames = getStatNameArray()
         daChieves = getAcheiveArrays()
+        updateText()
+        _ = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "addTime", userInfo: nil, repeats: true)
+    }
+    
+    func addTime()
+    {
+        daStats[3] += 1
+        storeDoubleArray("Stats", valArray: daStats)
     }
     
     override func didReceiveMemoryWarning() {
@@ -51,23 +59,33 @@ class StatsViewController: UIViewController {
     @IBOutlet weak var Value5: UILabel!
     
     @IBAction func Previous(sender: AnyObject) {
-        if (arraylocvalue - 1) >= (LOWEST_ARRAY_LOCATION)
+        if (arraylocvalue - 5) >= (LOWEST_ARRAY_LOCATION)
         {
-            arraylocvalue--
+            arraylocvalue = arraylocvalue - 5
+            updateText()
         }
+    }
+    
+    @IBAction func Next(sender: AnyObject) {
+        if (arraylocvalue + 5) <= (HIGHEST_ARRAY_LOCATION)
+        {
+            arraylocvalue = arraylocvalue + 5
+            updateText()
+        }
+    }
+    
+    func updateText()
+    {
         Stat1.text = daStatNames[0 + arraylocvalue]
         Stat2.text = daStatNames[1 + arraylocvalue]
         Stat3.text = daStatNames[2 + arraylocvalue]
         Stat4.text = daStatNames[3 + arraylocvalue]
         Stat5.text = daStatNames[4 + arraylocvalue]
         
-        Value1.text = String(daStats[0 + arraylocvalue])
-        Value2.text = String(daStats[1 + arraylocvalue])
-        Value3.text = String(daStats[2 + arraylocvalue])
-        Value4.text = String(daStats[3 + arraylocvalue])
-        Value5.text = String(daStats[4 + arraylocvalue])
-    }
-    
-    @IBAction func Next(sender: AnyObject) {
+        Value1.text = ((daStats[0 + arraylocvalue] % 1 == 0) ? String(Int(daStats[0 + arraylocvalue])) : String(round(1000 * daStats[0 + arraylocvalue]) / 1000))
+        Value2.text = ((daStats[1 + arraylocvalue] % 1 == 0) ? String(Int(daStats[1 + arraylocvalue])) : String(round(1000 * daStats[1 + arraylocvalue]) / 1000))
+        Value3.text = ((daStats[2 + arraylocvalue] % 1 == 0) ? String(Int(daStats[2 + arraylocvalue])) : String(round(1000 * daStats[2 + arraylocvalue]) / 1000))
+        Value4.text = ((daStats[3 + arraylocvalue] % 1 == 0) ? String(Int(daStats[3 + arraylocvalue])) : String(round(1000 * daStats[3 + arraylocvalue]) / 1000))
+        Value5.text = ((daStats[4 + arraylocvalue] % 1 == 0) ? String(Int(daStats[4 + arraylocvalue])) : String(round(1000 * daStats[4 + arraylocvalue]) / 1000))
     }
 }
