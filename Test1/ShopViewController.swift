@@ -66,5 +66,12 @@ class ShopViewController: UIViewController {
         }
     }
     
+    func updateStats(arraylocation: Int, updatevalue: Double)
+    {
+        daStats = getStatsArrays()
+        daStats[arraylocation] = daStats[arraylocation] + updatevalue
+        storeDoubleArray("Stats", valArray: daStats)
+    }
+    
     
 }

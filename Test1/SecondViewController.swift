@@ -58,8 +58,7 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     func addTime()
     {
-        daStats[3] += 1
-        storeDoubleArray("Stats", valArray: daStats)
+        updateStats(3, updatevalue: 1)
     }
     
     override func didReceiveMemoryWarning() {
@@ -183,8 +182,7 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
     @IBAction func EnterDaNumber(sender: AnyObject) {
         if numberlabel != ""
         {
-            daStats[0]++
-            storeDoubleArray("Stats", valArray: daStats)
+            updateStats(0, updatevalue: 1)
             if daChieves[0][1] == "No"
             {
                 if daStats[0] > 99
@@ -216,16 +214,14 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
             numberlabel = ""
             if adjustlabel == "Correct!"
             {
-                daStats[1]++
-                storeDoubleArray("Stats", valArray: daStats)
+                updateStats(1, updatevalue: 1)
                 imageView.image = UIImage(named:"Green_Circle")
                 Arrows.image = UIImage(named: "blank")
                 filler = Double(calculateShaqs(guesses, level: Int(userlevel)))
                 shaqs += filler
                 SideLabel.text = "Got \(Int(filler)) Shaqs!"
                 storeDouble("Shaq", value: shaqs)
-                daStats[2] += filler
-                storeDoubleArray("Stats", valArray: daStats)
+                updateStats(2, updatevalue: filler)
                 if guesses == 1
                 {
                     SideLabel.text = "Level Up!"
@@ -266,6 +262,13 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
         //print(bot, top) //debug
         configureCollectionView()
         sLay.reloadData()
+    }
+    
+    func updateStats(arraylocation: Int, updatevalue: Double)
+    {
+        daStats = getStatsArrays()
+        daStats[arraylocation] = daStats[arraylocation] + updatevalue
+        storeDoubleArray("Stats", valArray: daStats)
     }
     
     let cellID = "CellIdentifier"
