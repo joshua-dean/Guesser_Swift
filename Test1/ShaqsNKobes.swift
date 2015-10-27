@@ -111,11 +111,12 @@ func getAcheiveArrays() -> [[String]]
 func getStatNameArray() -> [String]
 {
     var namearray = retrieveStringArray("StatNames")
+    let temparray = daStatNameArray()
+    storeStringArray("StatNames", valArray: temparray)
+    namearray = temparray
     if namearray.count == 0
     {
-        let temparray = [String](count: 100, repeatedValue: "")
-        storeStringArray("StatNames", valArray: temparray)
-        namearray = temparray
+        
     }
     return namearray
 }
@@ -143,8 +144,8 @@ func daStatNameArray() -> [String]
     temparray[0] = "Total Guesses"
     temparray[1] = "Total Correct Guesses"
     temparray[2] = "Total Shaqs Earned"
-    temparray[3] = "Time Played(Minutes)"
-    temparray[4] = "# of times Kobe’s were bought"
+    temparray[3] = "Time Played(Seconds)"
+    temparray[4] = "Times buying Kobe's"
     return temparray
 }
 

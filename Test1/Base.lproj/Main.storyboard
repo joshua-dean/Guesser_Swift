@@ -9,7 +9,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Test1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Guesser" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -105,7 +105,7 @@
         <!--Second View Controller-->
         <scene sceneID="pXY-SN-f1l">
             <objects>
-                <viewController id="mQ1-me-P1g" customClass="SecondViewController" customModule="Test1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mQ1-me-P1g" customClass="SecondViewController" customModule="Guesser" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Qhb-xG-E5J"/>
                         <viewControllerLayoutGuide type="bottom" id="QsD-pR-JCL"/>
@@ -412,7 +412,7 @@
         <!--Shop View Controller-->
         <scene sceneID="las-Z2-xWZ">
             <objects>
-                <viewController storyboardIdentifier="ShopViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fOM-8E-Goa" customClass="ShopViewController" customModule="Test1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShopViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fOM-8E-Goa" customClass="ShopViewController" customModule="Guesser" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HZ0-dw-0NK"/>
                         <viewControllerLayoutGuide type="bottom" id="rd2-zc-CTX"/>

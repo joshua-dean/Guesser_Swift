@@ -32,6 +32,14 @@ class StatsViewController: UIViewController {
         daStats = getStatsArrays()
         daStatNames = getStatNameArray()
         daChieves = getAcheiveArrays()
+        updateText()
+        _ = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "addTime", userInfo: nil, repeats: true)
+    }
+    
+    func addTime()
+    {
+        daStats[3] += 1
+        storeDoubleArray("Stats", valArray: daStats)
     }
     
     override func didReceiveMemoryWarning() {
@@ -54,35 +62,30 @@ class StatsViewController: UIViewController {
         if (arraylocvalue - 5) >= (LOWEST_ARRAY_LOCATION)
         {
             arraylocvalue = arraylocvalue - 5
+            updateText()
         }
-        Stat1.text = daStatNames[0 + arraylocvalue]
-        Stat2.text = daStatNames[1 + arraylocvalue]
-        Stat3.text = daStatNames[2 + arraylocvalue]
-        Stat4.text = daStatNames[3 + arraylocvalue]
-        Stat5.text = daStatNames[4 + arraylocvalue]
-        
-        Value1.text = String(daStats[0 + arraylocvalue])
-        Value2.text = String(daStats[1 + arraylocvalue])
-        Value3.text = String(daStats[2 + arraylocvalue])
-        Value4.text = String(daStats[3 + arraylocvalue])
-        Value5.text = String(daStats[4 + arraylocvalue])
     }
     
     @IBAction func Next(sender: AnyObject) {
         if (arraylocvalue + 5) <= (HIGHEST_ARRAY_LOCATION)
         {
             arraylocvalue = arraylocvalue + 5
+            updateText()
         }
+    }
+    
+    func updateText()
+    {
         Stat1.text = daStatNames[0 + arraylocvalue]
         Stat2.text = daStatNames[1 + arraylocvalue]
         Stat3.text = daStatNames[2 + arraylocvalue]
         Stat4.text = daStatNames[3 + arraylocvalue]
         Stat5.text = daStatNames[4 + arraylocvalue]
         
-        Value1.text = String(daStats[0 + arraylocvalue])
-        Value2.text = String(daStats[1 + arraylocvalue])
-        Value3.text = String(daStats[2 + arraylocvalue])
-        Value4.text = String(daStats[3 + arraylocvalue])
-        Value5.text = String(daStats[4 + arraylocvalue])
+        Value1.text = ((daStats[0 + arraylocvalue] % 1 == 0) ? String(Int(daStats[0 + arraylocvalue])) : String(daStats[0 + arraylocvalue]))
+        Value2.text = ((daStats[1 + arraylocvalue] % 1 == 0) ? String(Int(daStats[1 + arraylocvalue])) : String(daStats[1 + arraylocvalue]))
+        Value3.text = ((daStats[2 + arraylocvalue] % 1 == 0) ? String(Int(daStats[2 + arraylocvalue])) : String(daStats[2 + arraylocvalue]))
+        Value4.text = ((daStats[3 + arraylocvalue] % 1 == 0) ? String(Int(daStats[3 + arraylocvalue])) : String(daStats[3 + arraylocvalue]))
+        Value5.text = ((daStats[4 + arraylocvalue] % 1 == 0) ? String(Int(daStats[4 + arraylocvalue])) : String(daStats[4 + arraylocvalue]))
     }
 }

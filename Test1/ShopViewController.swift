@@ -24,6 +24,13 @@ class ShopViewController: UIViewController {
         DaKobeAmount.text = String(thekobes)
         daStats = getStatsArrays()
         daChieves = getAcheiveArrays()
+        _ = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "addTime", userInfo: nil, repeats: true)
+    }
+    
+    func addTime()
+    {
+        daStats[3] += 1
+        storeDoubleArray("Stats", valArray: daStats)
     }
     
     override func didReceiveMemoryWarning() {
