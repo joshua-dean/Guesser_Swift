@@ -58,7 +58,7 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     func addTime()
     {
-        updateStats(3, updatevalue: 1)
+        daStats[3]++
     }
     
     override func didReceiveMemoryWarning() {
@@ -74,7 +74,7 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
     @IBOutlet weak var LevelSay: UILabel!
     
     @IBAction func ShopButton(sender: AnyObject) {
-        
+        storeDoubleArray("Stats", valArray: daStats)
     }
     
     /*

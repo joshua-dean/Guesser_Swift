@@ -329,6 +329,7 @@
                                     <rect key="frame" x="0.0" y="587" width="94" height="58"/>
                                 </variation>
                                 <connections>
+                                    <action selector="BackButton:" destination="zxg-aI-UBZ" eventType="touchUpInside" id="YxV-gY-nW3"/>
                                     <segue destination="mxs-fA-Zg0" kind="show" id="RXq-FE-V5u"/>
                                 </connections>
                             </button>
@@ -396,6 +397,7 @@
                                     <rect key="frame" x="286" y="587" width="94" height="58"/>
                                 </variation>
                                 <connections>
+                                    <action selector="StatButton:" destination="zxg-aI-UBZ" eventType="touchUpInside" id="EJP-iR-6Zg"/>
                                     <segue destination="ALb-wi-cn7" kind="show" id="mlD-ge-slm"/>
                                 </connections>
                             </button>
@@ -456,6 +458,7 @@
                                     <rect key="frame" x="0.0" y="587" width="94" height="58"/>
                                 </variation>
                                 <connections>
+                                    <action selector="BackButton:" destination="ALb-wi-cn7" eventType="touchUpInside" id="0hX-aJ-3mC"/>
                                     <segue destination="zxg-aI-UBZ" kind="show" id="Bnw-Mg-lqF"/>
                                 </connections>
                             </button>

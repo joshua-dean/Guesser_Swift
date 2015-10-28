@@ -12,7 +12,7 @@ import UIKit
 
 class StatsViewController: UIViewController {
     
-    var daStats: [Double] = []
+    var daStats = [Double](count: 100, repeatedValue: 0.0)
     var daStatNames: [String] = []
     var daChieves: [[String]] = []
     var arraylocvalue = 0
@@ -38,9 +38,7 @@ class StatsViewController: UIViewController {
     
     func addTime()
     {
-        daStats[3] += 1
-        storeDoubleArray("Stats", valArray: daStats)
-        updateText()
+        daStats[3]++
     }
     
     override func didReceiveMemoryWarning() {
@@ -100,5 +98,9 @@ class StatsViewController: UIViewController {
             Value4.text = String(Int(daStats[3] / 60)) + ":" + temp
         }
         Value5.text = ((daStats[4 + arraylocvalue] % 1 == 0) ? String(Int(daStats[4 + arraylocvalue])) : String(round(1000 * daStats[4 + arraylocvalue]) / 1000))
+    }
+    
+    @IBAction func BackButton(sender: AnyObject) {
+        storeDoubleArray("Stats", valArray: daStats)
     }
 }

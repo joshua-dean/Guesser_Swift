@@ -29,8 +29,7 @@ class ShopViewController: UIViewController {
     
     func addTime()
     {
-        daStats[3] += 1
-        storeDoubleArray("Stats", valArray: daStats)
+        daStats[3]++
     }
     
     override func didReceiveMemoryWarning() {
@@ -73,5 +72,12 @@ class ShopViewController: UIViewController {
         storeDoubleArray("Stats", valArray: daStats)
     }
     
+    @IBAction func BackButton(sender: AnyObject) {
+        storeDoubleArray("Stats", valArray: daStats)
+    }
+    
+    @IBAction func StatButton(sender: AnyObject) {
+        storeDoubleArray("Stats", valArray: daStats)
+    }
     
 }
