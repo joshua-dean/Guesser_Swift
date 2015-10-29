@@ -56,7 +56,7 @@ class ShopViewController: UIViewController {
             thekobes = Int(getAllDaKobes())
             DaShaqAmount.text = String(theshaqs)
             DaKobeAmount.text = String(thekobes)
-            daStats[5] = (daStats[4] / getAllDaKobes())
+            daStats[5] = (getAllDaKobes() / daStats[4])
             storeDoubleArray("Stats", valArray: daStats)
         }
         else
