@@ -39,6 +39,7 @@ class StatsViewController: UIViewController {
     func addTime()
     {
         daStats[3]++
+        updateText()
     }
     
     override func didReceiveMemoryWarning() {
@@ -72,6 +73,10 @@ class StatsViewController: UIViewController {
             updateText()
         }
     }
+    
+    /*
+    each square is 56 wide and 53 tall
+    */
     
     func updateText()
     {
