@@ -227,6 +227,22 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
                     SideLabel.text = "Level Up!"
                     userlevel++
                     storeDouble("Level", value: Double(userlevel))
+                    if daChieves[3][1] == "No"
+                    {
+                        if userlevel > 4
+                        {
+                            daChieves[3][1] = "Yes"
+                            storeObjectArray("Achievements", valArray: daChieves)
+                        }
+                    }
+                    if daChieves[4][1] == "No"
+                    {
+                        if userlevel > 9
+                        {
+                            daChieves[4][1] = "Yes"
+                            storeObjectArray("Achievements", valArray: daChieves)
+                        }
+                    }
                 }
                 secretnumber = generateNumber(UInt32(userlevel))
                 guesses = 0
