@@ -9,6 +9,8 @@
 import Foundation
 import Darwin
 
+let HIGH_TEXT_IN_ARRAY = 10
+
 func calculateShaqs(guesses: Int, level: Int) -> Int
 {
     var shaqs = 0
@@ -105,6 +107,27 @@ func getAcheiveArrays() -> [[String]]
         storeObjectArray("Achievements", valArray: temparray)
         statarray = temparray
     }
+    else
+    {
+        var emptyarrayloc = 0
+        for var i = 0; i < statarray.count; ++i{
+            if statarray[i][2] == ""
+            {
+                emptyarrayloc = i
+                break
+            }
+        }
+        if emptyarrayloc < HIGH_TEXT_IN_ARRAY
+        {
+            let temparray = daOriginalAchieveArray()
+            for var i = emptyarrayloc; i < HIGH_TEXT_IN_ARRAY; ++i
+            {
+                statarray[i][0] = temparray[i][0]
+                statarray[i][1] = temparray[i][1]
+                statarray[i][2] = temparray[i][2]
+            }
+        }
+    }
     return statarray
 }
 
@@ -131,8 +154,20 @@ func daOriginalAchieveArray() -> [[String]]
     temparray[1][2] = "Guess 500 times"
     temparray[2][0] = ""
     temparray[2][2] = "Guess 1k   times"
+    temparray[3][0] = ""
+    temparray[3][2] = "Reach Level 5"
+    temparray[4][0] = ""
+    temparray[4][2] = "Reach Level 10"
+    temparray[5][0] = ""
+    temparray[5][2] = "Reach Level 20"
+    temparray[6][0] = ""
+    temparray[6][2] = "Reach Level 50"
+    temparray[7][0] = ""
+    temparray[7][2] = "Reach Level 75"
+    temparray[8][0] = ""
+    temparray[8][2] = "Reach Level 100"
     var i: Int
-    for i = 0; i < 5; ++i{
+    for i = 0; i < 50; ++i{
         temparray[i][1] = "No"
     }
     return temparray

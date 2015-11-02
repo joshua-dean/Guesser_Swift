@@ -18,6 +18,7 @@
 		3390ACEC1BA9C33E00A0A5A3 /* Test1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3390ACEB1BA9C33E00A0A5A3 /* Test1UITests.swift */; };
 		33E11D0D1BAB14B90000C3FE /* GameUI.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33E11D0C1BAB14B90000C3FE /* GameUI.xib */; };
 		5B6BFDAA1BAB1A820013811D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6BFDA91BAB1A820013811D /* SecondViewController.swift */; };
+		5BC0D09F1BE7C526006A4F15 /* AchievementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC0D09E1BE7C526006A4F15 /* AchievementViewController.swift */; };
 		5BDA5D781BB9CB21007193D1 /* IPhone4s.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BDA5D771BB9CB21007193D1 /* IPhone4s.storyboard */; };
 		5BEB2D161BBD873900757E5F /* IPhone5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BEB2D151BBD873900757E5F /* IPhone5.storyboard */; };
 		5BEB2D181BBD890800757E5F /* IPhone6.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BEB2D171BBD890800757E5F /* IPhone6.storyboard */; };
@@ -61,6 +62,7 @@
 		33E11D0C1BAB14B90000C3FE /* GameUI.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameUI.xib; sourceTree = "<group>"; };
 		5B5A7C4D1BAC675A005BCA8F /* ShaqsNKobes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShaqsNKobes.swift; sourceTree = "<group>"; };
 		5B6BFDA91BAB1A820013811D /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		5BC0D09E1BE7C526006A4F15 /* AchievementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementViewController.swift; sourceTree = "<group>"; };
 		5BDA5D771BB9CB21007193D1 /* IPhone4s.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = IPhone4s.storyboard; sourceTree = "<group>"; };
 		5BEB2D151BBD873900757E5F /* IPhone5.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = IPhone5.storyboard; sourceTree = "<group>"; };
 		5BEB2D171BBD890800757E5F /* IPhone6.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = IPhone6.storyboard; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				5B6BFDA91BAB1A820013811D /* SecondViewController.swift */,
 				3390ACCF1BA9C33E00A0A5A3 /* Main.storyboard */,
 				5BDA5D771BB9CB21007193D1 /* IPhone4s.storyboard */,
+				5BC0D09E1BE7C526006A4F15 /* AchievementViewController.swift */,
 				5BEB2D171BBD890800757E5F /* IPhone6.storyboard */,
 				5B5A7C4D1BAC675A005BCA8F /* ShaqsNKobes.swift */,
 				3390ACD21BA9C33E00A0A5A3 /* Assets.xcassets */,
@@ -289,6 +292,7 @@
 			files = (
 				6072CD101BACB74900DF940E /* ShaqsNKobes.swift in Sources */,
 				5B6BFDAA1BAB1A820013811D /* SecondViewController.swift in Sources */,
+				5BC0D09F1BE7C526006A4F15 /* AchievementViewController.swift in Sources */,
 				334853F61BB05EE90092A086 /* ShopViewController.swift in Sources */,
 				3390ACCE1BA9C33E00A0A5A3 /* ViewController.swift in Sources */,
 				609D40721BDC79E4009F68FB /* StatsViewController.swift in Sources */,
