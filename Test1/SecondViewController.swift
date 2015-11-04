@@ -183,30 +183,6 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
         if numberlabel != ""
         {
             updateStats(0, updatevalue: 1)
-            if daChieves[0][1] == "No"
-            {
-                if daStats[0] > 99
-                {
-                    daChieves[0][1] = "Yes"
-                    storeObjectArray("Achievements", valArray: daChieves)
-                }
-            }
-            if daChieves[1][1] == "No"
-            {
-                if daStats[0] > 499
-                {
-                    daChieves[1][1] = "Yes"
-                    storeObjectArray("Achievements", valArray: daChieves)
-                }
-            }
-            if daChieves[2][1] == "No"
-            {
-                if daStats[0] > 999
-                {
-                    daChieves[2][1] = "Yes"
-                    storeObjectArray("Achievements", valArray: daChieves)
-                }
-            }
             numberguessed = Int(numberlabel)!
             guesses++
             adjustlabel = calculateGuess(secretnumber, guessnumber: numberguessed)
@@ -219,6 +195,14 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
                 Arrows.image = UIImage(named: "blank")
                 filler = Double(calculateShaqs(guesses, level: Int(userlevel)))
                 shaqs += filler
+                if daChieves[10][1] == "No"
+                {
+                    if filler < 0
+                    {
+                        daChieves[10][1] = "Yes"
+                        storeObjectArray("Achievements", valArray: daChieves)
+                    }
+                }
                 SideLabel.text = "Got \(Int(filler)) Shaqs!"
                 storeDouble("Shaq", value: shaqs)
                 updateStats(2, updatevalue: filler)
@@ -227,22 +211,6 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
                     SideLabel.text = "Level Up!"
                     userlevel++
                     storeDouble("Level", value: Double(userlevel))
-                    if daChieves[3][1] == "No"
-                    {
-                        if userlevel > 4
-                        {
-                            daChieves[3][1] = "Yes"
-                            storeObjectArray("Achievements", valArray: daChieves)
-                        }
-                    }
-                    if daChieves[4][1] == "No"
-                    {
-                        if userlevel > 9
-                        {
-                            daChieves[4][1] = "Yes"
-                            storeObjectArray("Achievements", valArray: daChieves)
-                        }
-                    }
                 }
                 secretnumber = generateNumber(UInt32(userlevel))
                 guesses = 0

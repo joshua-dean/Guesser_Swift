@@ -12,16 +12,21 @@ import UIKit
 
 class AchievementViewController: UIViewController {
     
+    var daStats: [Double] = []
     var daChieves: [[String]] = []
     var arraylocvalue = 0
+    var userlevel = 0.0
     let LOWEST_ARRAY_LOCATION = 0
-    let HIGHEST_ARRAY_LOCATION = 5
+    let HIGHEST_ARRAY_LOCATION = 15
 
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         daChieves = getAcheiveArrays()
+        daStats = getStatsArrays()
+        userlevel = getAllDaLevels()
+        checkAchievements()
         updateText()
     }
     
@@ -71,6 +76,143 @@ class AchievementViewController: UIViewController {
         Val3.text = daChieves[2 + arraylocvalue][1]
         Val4.text = daChieves[3 + arraylocvalue][1]
         Val5.text = daChieves[4 + arraylocvalue][1]
+    }
+    
+    func checkAchievements()
+    {
+        if daChieves[0][1] == "No"
+        {
+            if daStats[0] > 99
+            {
+                daChieves[0][1] = "Yes"
+                storeObjectArray("Achievements", valArray: daChieves)
+            }
+        }
+        if daChieves[1][1] == "No"
+        {
+            if daStats[0] > 499
+            {
+                daChieves[1][1] = "Yes"
+                storeObjectArray("Achievements", valArray: daChieves)
+            }
+        }
+        if daChieves[2][1] == "No"
+        {
+            if daStats[0] > 999
+            {
+                daChieves[2][1] = "Yes"
+                storeObjectArray("Achievements", valArray: daChieves)
+            }
+        }
+        if daChieves[11][1] == "No"
+        {
+            if daStats[0] > 4999
+            {
+                daChieves[11][1] = "Yes"
+                storeObjectArray("Achievements", valArray: daChieves)
+            }
+        }
+        if daChieves[12][1] == "No"
+        {
+            if daStats[0] > 9999
+            {
+                daChieves[12][1] = "Yes"
+                storeObjectArray("Achievements", valArray: daChieves)
+            }
+        }
+        if daChieves[13][1] == "No"
+        {
+            if daStats[0] > 49999
+            {
+                daChieves[13][1] = "Yes"
+                storeObjectArray("Achievements", valArray: daChieves)
+            }
+        }
+        if daChieves[14][1] == "No"
+        {
+            if daStats[0] > 99999
+            {
+                daChieves[14][1] = "Yes"
+                storeObjectArray("Achievements", valArray: daChieves)
+            }
+        }
+        if daChieves[3][1] == "No"
+        {
+            if userlevel > 4
+            {
+                daChieves[3][1] = "Yes"
+                storeObjectArray("Achievements", valArray: daChieves)
+            }
+        }
+        if daChieves[4][1] == "No"
+        {
+            if userlevel > 9
+            {
+                daChieves[4][1] = "Yes"
+                storeObjectArray("Achievements", valArray: daChieves)
+            }
+        }
+        if daChieves[5][1] == "No"
+        {
+            if userlevel > 19
+            {
+                daChieves[5][1] = "Yes"
+                storeObjectArray("Achievements", valArray: daChieves)
+            }
+        }
+        if daChieves[6][1] == "No"
+        {
+            if userlevel > 49
+            {
+                daChieves[6][1] = "Yes"
+                storeObjectArray("Achievements", valArray: daChieves)
+            }
+        }
+        if daChieves[7][1] == "No"
+        {
+            if userlevel > 74
+            {
+                daChieves[7][1] = "Yes"
+                storeObjectArray("Achievements", valArray: daChieves)
+            }
+        }
+        if daChieves[8][1] == "No"
+        {
+            if userlevel > 99
+            {
+                daChieves[8][1] = "Yes"
+                storeObjectArray("Achievements", valArray: daChieves)
+            }
+        }
+        if daChieves[15][1] == "No"
+        {
+            if daStats[4] > 9
+            {
+                daChieves[15][1] = "Yes"
+                storeObjectArray("Achievements", valArray: daChieves)
+            }
+        }
+        if daChieves[16][1] == "No"
+        {
+            if daStats[4] > 49
+            {
+                daChieves[16][1] = "Yes"
+                storeObjectArray("Achievements", valArray: daChieves)
+            }
+        }
+        if daChieves[17][1] == "No"
+        {
+            if daStats[4] > 99
+            {
+                daChieves[17][1] = "Yes"
+                storeObjectArray("Achievements", valArray: daChieves)
+            }
+        }
+        if daChieves[9][1] == "No" && userlevel > 1
+        {
+            daChieves[9][1] = "Yes"
+            storeObjectArray("Achievements", valArray: daChieves)
+        }
     }
     
 }

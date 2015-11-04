@@ -9,7 +9,7 @@
 import Foundation
 import Darwin
 
-let HIGH_TEXT_IN_ARRAY = 10
+let HIGH_TEXT_IN_ARRAY = 18 // 1 higher than highest filled location in array
 
 func calculateShaqs(guesses: Int, level: Int) -> Int
 {
@@ -153,7 +153,7 @@ func daOriginalAchieveArray() -> [[String]]
     temparray[1][0] = ""
     temparray[1][2] = "Guess 500 times"
     temparray[2][0] = ""
-    temparray[2][2] = "Guess 1k   times"
+    temparray[2][2] = "Guess 1k times"
     temparray[3][0] = ""
     temparray[3][2] = "Reach Level 5"
     temparray[4][0] = ""
@@ -166,6 +166,24 @@ func daOriginalAchieveArray() -> [[String]]
     temparray[7][2] = "Reach Level 75"
     temparray[8][0] = ""
     temparray[8][2] = "Reach Level 100"
+    temparray[9][0] = ""
+    temparray[9][2] = "Guess Correct on 1st try"
+    temparray[10][0] = ""
+    temparray[10][2] = "Get Negative Shaqs"
+    temparray[11][0] = ""
+    temparray[11][2] = "Guess 5k times"
+    temparray[12][0] = ""
+    temparray[12][2] = "Guess 10k times"
+    temparray[13][0] = ""
+    temparray[13][2] = "Guess 50k times"
+    temparray[14][0] = ""
+    temparray[14][2] = "Guess 100k times"
+    temparray[15][0] = ""
+    temparray[15][2] = "Buy Kobe's 10 times"
+    temparray[16][0] = ""
+    temparray[16][2] = "Buy Kobe's 50 times"
+    temparray[17][0] = ""
+    temparray[17][2] = "Buy Kobe's 100 times"
     var i: Int
     for i = 0; i < 50; ++i{
         temparray[i][1] = "No"
